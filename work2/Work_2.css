@@ -1,0 +1,108 @@
+#body{
+    margin: 0;
+    background-color: rgb(0, 48, 96);
+}
+
+#header{
+    display: block;
+    width: 100%; 
+    padding: 20px 0px 20px 0px; 
+    height: 180px;
+    text-align: center;
+    background-color: black;
+}
+#LogAndName{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+#logo{
+    float: left; 
+    margin: 10px, 0px, 10px, 0px;
+    width: 230px; 
+    height: 160px;
+}
+
+#h1{
+    display: block;
+    background-color: black; 
+    padding:60px; 
+    color:aqua;
+}
+
+#nav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#nav li{display: inline;}
+
+#menu{
+    color:whitesmoke;
+}
+
+#block{
+    max-width: 960px; 
+    background-color:darkcyan; 
+    margin: 0 auto; 
+    margin-top: 17px; 
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.content{
+    max-width: 960px; 
+    background-color:rgb(129, 186, 186);
+    margin: 0 auto; 
+    margin-top: 17px; 
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+#cont_link_1{
+    text-align: left;
+    margin-right: auto;
+    display: inline-block;
+}
+#cont_link_2{
+    text-align: center;
+    margin-right: auto;
+    display: inline-block;
+}
+#cont_link_3{
+    text-align: right;
+    display: inline-block;
+}
+
+#center{
+    display: inline-block;
+    padding: 20px;
+    margin-top: 0px;
+}
+li{
+    text-align: left;
+}
+
+#table{
+    text-align: left;
+}
+.chet{
+    color: white;
+    background-color: deeppink;
+}
+.nechet{
+    color: white;
+    background-color: blue;
+}
+
+#form{
+    text-align: left;
+}
+
+#footer{
+    background-color: black; 
+    padding:70px; 
+    margin-top: 20px;
+    color:aqua;
+}
