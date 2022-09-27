@@ -1,0 +1,252 @@
+
+@media(max-width:800px){
+
+#body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 48, 96);
+}
+
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+
+#header{
+    padding: 2vw; 
+    height: 20vw;
+    text-align: center;
+    background-color: black;
+    flex: 1;
+    order: 1;
+}
+
+#logo{
+    float: left; 
+    width: 26vw; 
+    height: 17vw;
+}
+
+#h1{
+    background-color: black; 
+    margin-left: 10vw;
+    padding:5vw; 
+    color:aqua;
+}
+
+#h2{
+    font-weight: bolder;
+    font-size: x-large;
+}
+#block{
+    background-color:darkcyan;
+    margin: 2vw 0vw 0vw 0vw;
+    height: 35vw;
+    padding: 4vw;
+    flex: 1;
+    order: 2;
+}
+#menu{
+    background-color:darkcyan;
+    font-weight: bolder;
+    color:whitesmoke;
+    font-size: x-large;
+}
+#nav{
+    background-color:darkcyan;
+}
+#nav li{display: inline;}
+
+
+.content{
+    background-color:rgb(129, 186, 186);;
+}
+#cont_1{
+    flex: 1;
+    order: 3;
+    background-color:rgb(129, 186, 186);
+    margin: 2vh 0vh 0vh 0vh;
+    padding: 5vw;
+    padding-left: 3vw;
+    margin-top: 2vw;
+}
+
+#cont_2{
+    margin: 2vh 0vh 0vh 0vh;
+    padding: 5vw;
+    background-color:rgb(129, 186, 186);
+    flex: 1;
+    order: 5;
+    margin-top: 0vw;
+}
+#table{
+    height: 10vh;
+    width: 35vw;
+}
+.chet{
+    color: white;
+    background-color: deeppink;
+}
+.nechet{
+    color: white;
+    background-color: blue;
+}
+
+#cont_3{
+    flex: 1;
+    order: 4;
+    margin: 2vh 0vh 0vh 0vh;
+    padding: 5vw;
+    margin-top: 0vw;
+}
+#form{
+    margin: 2vh 0vh 0vh 0vh;
+    padding: 2vw;
+    
+}
+
+#footer{
+    background-color: black;  
+    color:aqua;
+    margin: 2vh 0vh 0vh 0vh;
+    padding: 2vw;
+    flex: 1;
+    order: 6;
+}
+
+}
+
+@media (min-width:800px) {
+    #body{
+        margin: 0;
+        background-color: rgb(0, 48, 96);
+    }
+    a:link{
+        color: white;
+    }
+    a:visited{
+        color: white;
+    }    
+
+    #header{
+         
+        padding: 15px 0px 15px 0px; 
+        height: 180px;
+        text-align: center;
+        background-color: black;
+    }
+    #LogAndName{
+        margin: 0 auto;
+        max-width: 960px;
+    }
+    #logo{
+        float: left; 
+        margin: 10px 0px 10px 0px;
+        width: 230px; 
+        height: 160px;
+    }
+    #h1{
+        background-color: black; 
+        padding:60px; 
+        color:aqua;
+    }
+    #h2{
+        font-weight: bolder;
+        font-size: x-large;
+    }
+
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+        vertical-align: middle;
+        max-width: 960px;
+        
+    }
+    #nav li{display: inline;}
+
+    #menu{
+        font-weight: bolder;
+        color:whitesmoke;
+        font-size: x-large;
+    }
+    #block{
+        max-width: 960px; 
+        background-color:darkcyan; 
+        margin: 0 auto; 
+        margin-top: 17px; 
+        padding: 20px;
+        
+        text-align: center;
+    }
+    .content{
+        max-width: 960px; 
+        background-color:rgb(129, 186, 186);
+        margin: 0 auto; 
+         
+        padding: 20px;
+        
+        text-align: center;
+    }
+    #cont_1{
+        margin-top: 17px;
+    }
+    #cont_2{
+        margin-top: 0px;
+    }
+    #cont_3{
+        margin-top: 0px;
+    }
+    #cont_link_1{
+        float: left;
+        width: 310px;
+    }
+    #cont_link_2{
+        margin: 0 auto;
+        display: inline-block;
+        width: 310px;
+    }
+    #cont_link_3{
+        float: right;
+        width: 310px;
+    }
+    
+    #center{
+        display: inline-block;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    li{
+        text-align: left;
+    }
+
+    #table{
+        text-align: left;
+    }
+    .chet{
+        color: white;
+        background-color: deeppink;
+    }
+    .nechet{
+        color: white;
+        background-color: blue;
+    }
+
+    #form{
+        text-align: left;
+    }
+
+    #footer{
+        background-color: black; 
+        padding:70px; 
+        margin-top: 20px;
+        color:aqua;
+        display: block;
+    }
+}

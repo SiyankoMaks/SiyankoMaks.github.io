@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- <meta charset="utf-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="work_3.css">
+  </head>
+
+<body id ="body">
+    <header id="header">
+      <div id="LogAndName">
+        <img id ="logo" src="https://on-desktop.com/ru/images/wp.php?path=/wps/Computers_HTML_5_030444_.jpg&wp=5" alt ="Лого">
+        <h1 id="h1">Сайт HTML</h1>
+      </div>
+    </header>
+    
+    <div id="block">
+        <p id="menu">
+          Меню
+        </p> 
+        <div id="nav">
+            <a href="#cont_1" id="cont_link_1"><h3>Список гипперссылок</h3></a>
+            <a href="#cont_2" id="cont_link_2"><h3>Таблица</h3></a>
+            <a href="#cont_3" id="cont_link_3"><h3>Форма</h3></a>
+        </div>
+    </div>
+    
+    <div class="content" id="cont_1">
+       <p id="h2">Список гипперссылок</p>
+       <ol id="center">
+         <li><a href="http://example.com/">Example</a></li>
+         <li><a href="https://example.com/">Example</a></li>
+         <li><a href="ftp://example.com/file.txt">FTP-файл</a></li>
+         <li><a href="ftp://user:password@example.com/myfile.zip">FTP-файл с паролем</a></li>
+         <li><a href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет">Фрагмент страницы</a></li>
+         <li><a href="#top">Фрагмент текущей страницы</a></li>
+         <li><a href="https://sport_example.com?summer=football&winter=hockey">Два параметра в ссылке</a></li>
+         <li>
+           <strong>Список ссылок с title</strong>
+           <ol>
+             <li><a href="https://ru.wikipedia.org/wiki/" title="Главная страница википедии">Основная страница википедии</a></li>
+             <li><a href="https://ru.wikipedia.org/wiki/Портал:Обзор" title="Портал:Обзор">Википедия: обзор</a></li>
+             <li><a href="https://ru.wikipedia.org/wiki/Портал:Наука" title="Портал:Наука">Википедия: наука</a></li>
+           </ol>
+         </li>
+         <li><a>https://ru.wikipedia.org: Ссылка без href</a></li>
+         <li><a href="">Ссылка с пустым href</a></li>
+         <li><a href="http://example.com" rel="nofollow">Запрет поисковикам</a></li>
+         <li>
+           <!--noindex--> <a href="https://example.com" rel="nofollow">Ссылка запрет индексации</a> <!--/noindex-->
+         </li>
+         <li>
+           <a>Звезда́ — массивное самосветящееся</a>
+           <a href="https://ru.wikipedia.org/wiki/Астрономический_объект"> небесное тело </a>
+           <a>, состоящее из газа и плазмы, в котором происходят, происходили или будут происходить термоядерные реакции.</a>
+         </li>
+         <li> <a href="https://ru.wikipedia.org/wiki/Краснодар_(парк)"> <Img src="https://www.easy-beauty.ru/pic/uploaded/wrlW8OCk3gQ.jpg" Width="200" Height="150" alt="Парк"> </a></li>
+         <li>
+           <p><a>Ссылки из прямоугольной и круглой области</a></p>
+           <img src = "https://media.istockphoto.com/vectors/glass-mirror-in-the-form-of-a-circle-and-a-rectangle-with-rounded-vector-id1255393650" width="260" height="182" usemap = "#objects" alt="Прямоугольник и круг">
+           <map name="objects">
+             <area shape="rect" coords="15,45,135,140" href = "https://ru.wikipedia.org/wiki/Прямоугольник" alt="Прямоугольник">
+             <area shape="circle" coords="197,87,53" href = "https://ru.wikipedia.org/wiki/Круг" alt="Круг">
+           </map>
+         </li>
+         <li><a href="index.html">На текущий каталог</a></li>
+         <li><a href="/about/index.html">Каталог about</a></li>
+         <li><a href="../index.html">Каталог уровнем выше текущего</a></li>
+         <li><a href="../../index.html">Каталог двумя уровнями выше</a></li>
+         <li><a href="ru.wikipedia.org"> Сокращенная ссылка на главную страницу</a></li>
+         <li><a href="#top"> Сокращенная внутренняя ссылка</a></li>
+       </ol>
+      </div>
+
+      <div class="content" id="cont_2">
+       <h2>Таблица</h2>
+       <table id="table">
+         <tr class="chet">
+           <th>Фамилия</th>
+           <th>Имя</th>
+           <th>Пол</th>
+         </tr>
+         <tr class="nechet">
+           <td colspan="3">Сиянко Максим Мужской</td>
+         </tr>
+         <tr class="chet">
+           <td>Бойко</td>
+           <td>Дарья</td>
+           <td>Женский</td>
+         </tr>
+         <tr class="nechet">
+           <td>Шабанов</td>
+           <td>Илья</td>
+           <td>Мужской</td>
+         </tr>
+         <tr class="chet">
+           <td>Прасова</td>
+           <td>Надежда</td>
+           <td>Женский</td>
+         </tr>
+         <tr class="nechet">
+           <td colspan="3">Схаляхо Артур Мужской</td>
+         </tr>
+       </table>
+       </div>
+       <div class="content" id="cont_3">
+       <h2>Форма</h2>
+       <form id="form">
+         <p><label>
+           Имя:
+           <input type="text" name="UserName" placeholder = "Введите имя" >
+         </label></p>
+         <p><label>
+           E-mail:
+           <input type="email" name="mail" placeholder="Введите E-mail" >
+         </label></p>
+         <p><label>
+           Дата рождения:
+           <input type="date" name="data" >
+         </label></p>
+         <p><label>
+           Пол:
+           <input type="radio" name="gen" checked="checked"> Мужской
+          </label>
+         <label>
+            <input type="radio" name="gen"> Женский
+          </label></p>
+         <label>
+           Количество конечностей:
+           <br>
+           <input type="radio" name="limb" checked="checked"> 2
+         </label>
+         <label> <input type="radio" name="limb"> 4 </label>
+         <label> <input type="radio" name="limb"> 6 </label>
+         <label> <input type="radio" name="limb"> 8 </label>
+         <br><br>
+         <label>
+           Сверхспособности:
+           <br>
+           <select multiple name="powers" size="3">
+             <option value="1">Бессмертие</option>
+             <option value="2">Прохождение сквозь стены</option>
+             <option value="3">Левитация</option>
+           </select>
+         </label>
+         <br><br>
+         <label>
+           Биография:
+           <br>
+           <textarea name="biography" cols="25" rows="15" placeholder="Заполните поле биографии"></textarea>
+         </label>
+         <p><label>
+           С контрактом ознакомлен(-а)
+           <input type="checkbox">
+         </label></p>
+         <p><label>
+           <input type="submit" value="Отправить">
+         </label></p>
+       </form>
+     </div>
+
+    <footer id="footer">
+     <span id="nick">© Максим Сиянко</span>
+    </footer>
+
+</body>
+</html>
