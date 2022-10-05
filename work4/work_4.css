@@ -1,0 +1,140 @@
+#body{
+    background-color: rgb(0, 48, 96);
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+
+header{
+    background-color: black;
+}
+
+#h1{
+    background-color: black; 
+    color:aqua;
+}
+#h_1{
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+}
+#h_2{
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+}
+#h_3{
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+}
+
+#menu{
+    background-color:darkcyan;
+    font-weight: bolder;
+    color:whitesmoke;
+    font-size: x-large;
+    text-align: center;
+}
+
+nav{
+    background-color:darkcyan;
+}
+
+.content{
+    background-color:rgb(129, 186, 186);;
+}
+#cont_1{
+    background-color:rgb(129, 186, 186);
+}
+#cont_2{
+    background-color:rgb(129, 186, 186);
+}
+#cont_3{
+    background-color:rgb(129, 186, 186);
+}
+
+.chet{
+    color: white;
+    background-color: deeppink;
+}
+.nechet{
+    color: white;
+    background-color: blue;
+}
+
+#footer{
+    background-color: black;  
+    color:aqua;
+}
+
+@media(max-width:768px){
+
+header{
+    height: 30vw;
+}
+
+#logo{
+    width: 26vw; 
+    height: 17vw;
+}
+
+#table{
+    height: 10vh;
+    width: 35vw;
+}
+
+#footer{
+    height: 10vw;
+}
+
+}
+
+@media (min-width:768px) {   
+
+    header{
+        height: 180px;
+    }
+    #LogAndName{
+        max-width: 960px;
+    }
+    #logo{
+        width: 230px; 
+        height: 160px;
+    }
+
+    nav{
+        vertical-align: middle;
+        max-width: 960px;
+    }
+    #cont_link_2{
+        text-align: center;
+    }
+    #cont_link_3{
+        text-align: right;
+    }
+
+    .content{
+        max-width: 960px; 
+        text-align: center;
+    }
+    
+    li{
+        text-align: left;
+    }
+
+    #table{
+        text-align: left;
+    }
+
+    #form{
+        text-align: left;
+    }
+    #footer{
+        height: 50px;
+    }
+
+}
