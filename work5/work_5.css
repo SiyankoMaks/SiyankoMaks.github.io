@@ -1,0 +1,50 @@
+.cont{
+    margin: 0 auto;
+    background-color: aqua;
+    max-width: 768px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#pr{
+    font-size: larger;
+}
+
+#tov{
+    font-size: larger;
+}
+
+#res{
+    text-align: center;
+    font-size: large;
+}
+#result{
+    font-size: x-large;
+}
+
+@media(min-width:768px){
+    .cont{
+        height: 275px;
+    }
+}
+
+@media(max-width:430px){
+    .cont{
+        height: 70vw;
+    }
+}
+
+@media(max-width:380px){
+    .cont{
+        height: 90vw;
+    }
+    #tov{
+        margin-left: 7.2%;
+    }
+}
+
+@media(max-width:325px){
+    .cont{
+        height: 105vw;
+    }
+}
