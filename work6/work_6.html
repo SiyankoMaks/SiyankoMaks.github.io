@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+    <link rel="stylesheet" href="work_6.css">
+    <script src="work_6.js"></script>
+  </head>
+
+  <body>
+    <form>
+      <div class="cont1">
+        <h1>Калькулятор стоимости заказа</h1>
+        <p id ="pr">Стоимость товара (1 шт.): <input id="price" type="text">
+        <p id ="tov1">Количество товара: <input id="num" type="text">
+        <p><button id ="but" type="button">Вычислить</button></p>
+        <div id="res">Стоимость заказа: <div id="result"></div></div>
+      </div>
+    </form>
+
+    <form>
+      <div class="cont2">
+        <h2>Опции и свойства товара</h2>
+        <p id ="tov2"><label>Количество товара: <input id="num2"></label></p>
+        <select id="select" name="prod_type">
+          <option value="1">Продукт 1</option>
+          <option value="2">Продукт 2</option>
+          <option value="3">Продукт 3</option>
+        </select>
+        <br><br>
+        <div style="display: none;" id="rad">
+          <label><input type="radio" name="prod_option" value="opt1" checked="checked">Опция 1</label>
+          <label><input type="radio" name="prod_option" value="opt2">Опция 2</label>
+          <label><input type="radio" name="prod_option" value="opt3">Опция 3</label>
+        </div>
+        <div style="display: block;" id="ch_box"><label><input type="checkbox" name="prop">Свойство</label></div>
+        <br>
+        <div id="res1">Стоимость заказа: <div id ="result1"></div></div>
+      </div>
+    </form>
+  </body>
+
+</html>
