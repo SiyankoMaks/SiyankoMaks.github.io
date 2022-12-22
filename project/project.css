@@ -781,6 +781,7 @@ color:#999999;
 }
 .footer{
   display:flex;
+	float: left;
  flex-direction: column;
 	width:100%;
 	background-image: url('project_files/5137894.jpg') 
