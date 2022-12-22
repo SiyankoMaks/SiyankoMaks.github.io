@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Проект</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="project_files">
+    <!-- Шрифт -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
+    <script src="project_files/jquery-1.8.3.min.js" defer></script>
+    <script src="project_files/jCarouselLite.js" defer></script>
+    <script src="project.js" defer></script>
+  </head>
+
+  <body>
+     <!-- 1. Шапка сайта + навигационное меню -->
+    <header class="header">
+      <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="project_files/video.mp4" type="video/mp4"></source>
+      </video>
+      <img src="project_files/druplicon.svg" id="background_photo">
+      <div class="container">
+          <img src="project_files/drupal-coder.svg" id="logo">
+          <ul class="menu">
+            <li><a href="">Поддержка Drupal</a></li>
+            <li id="nav"><a href="">Администрирование</a>
+              <ul class = "second">
+                <li><a href = "#">МИГРРАЦИЯ</a></li>
+                <li><a href = "#">БЭКАПЫ</a></li>
+                <li><a href = "#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+                <li><a href = "#">ОПТИМИЗАЦИЯ СКОРОСТИ</a></li>
+                <li><a href = "#">ПЕРЕЕЗД НА HTTPS</a></li>
+              </ul>
+            </li>
+            <li><a href="">Продвижение</a></li>
+            <li><a href="">Реклама</a></li>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Проекты</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+      </div>
+      <div class="textcols">
+        <div class="shapka">
+          <div class="textcols-item">
+            <li><a  id="sup">Поддержка сайтов на Drupal</a></li>
+            <br><br>
+            <li><a id="sup_text">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</a></li>
+            <br><br>
+            <br><br>
+            <div class="tarif">
+              <li><a href="" id="tarif">ТАРИФЫ</a></li>
+            </div>
+          </div>
+          <div class="textcols-item">
+            <ul class="item_1">
+              <div id="block_1">
+                <li>
+                  <a id="text_col">#1</a>
+                  <img src="project_files/cup.png" id="cup">
+                </li>
+                <li><a>Drupal-разработчик в России по версии Рейтинга Рунета</a></li>
+              </div>
+              <div id="block_1">
+                <li><a id="text_col">3+</a></li>
+                <li><a>средний опыт специалистов более 3-х лет</a></li>
+              </div>
+              <div id="block_1">
+                <li><a id="text_col">14</a></li>
+                <li><a>лет опыта в сфере Drupal</a></li>
+              </div>
+            </ul>
+            <ul class="item_1">
+              <div id="block_2">
+                <li><a id="text_col">50+</a></li>
+                <li><a>модулей и тем в формате DrupalGive</a></li>
+              </div>
+              <div id="block_2">
+                <li><a id="text_col">90000+</a></li>
+                <li><a>часов поддержки сайтов на Drupal</a></li>
+              </div>
+              <div id="block_2">
+                <li><a id="text_col">300+</a></li>
+                <li><a>проектов на поддержке</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 2. Блок "13 лет..." -->
+    <drupal class="drupal_sup">
+      <div class="drup_sup_1">
+        <li><a class="sup_1_text">13 лет совершенствуем компетенции в Drupal поддержке!</a></li>
+        <br><br>
+        <li><a>Разрабатываем и оптимизируем модули, расширяем функциональность сайтов, обновляем дизайн</a></li>
+        <br><br>
+        <br><br>
+      </div>
+      <div class="drup_sup_2">
+        <ul class="drup_sup_str">
+          <div id="sup_str_text">
+            <img src="project_files/competency-1.svg" id="comp_1">
+            <li><a>Добавление информации на сайт, создание новых разделов</a></li>
+          </div>
+          <div id="sup_str_text">
+            <img src="project_files/competency-2.svg" id="comp_1">
+            <li><a>Разработка и оптимизация модулей сайта</a></li>
+          </div>
+          <div id="sup_str_text">
+            <img src="project_files/competency-3.svg" id="comp_1">
+            <li><a>Интеграция с CRM, 1C, платежными системами, любыми веб-сервисами</a></li>
+          </div>
+            <div id="sup_str_text">
+              <img src="project_files/competency-4.svg" id="comp_1">
+              <li><a>Любые функции доработки функционала и дизайна</a></li>
+            </div>
+          </ul>
+        <ul class="drup_sup_str">
+          <div id="sup_str_text">
+            <img src="project_files/competency-5.svg" id="comp_1">
+            <li><a>Аудит и мониторинг безопасности Drupal-сайтов</a></li>
+          </div>
+          <div id="sup_str_text">
+            <img src="project_files/competency-6.svg" id="comp_1">
+            <li><a>Миграция, импорт контента и апгрейд Drupal</a></li>
+          </div>
+          <div id="sup_str_text">
+            <img src="project_files/competency-7.svg" id="comp_1">
+            <li><a>Оптимизация и ускорение Drupal-сайтов</a></li>
+          </div>
+          <div id="sup_str_text">
+            <img src="project_files/competency-8.svg" id="comp_1">
+            <li><a>Веб-маркетинг, консультации и работы по SEO</a></li>
+          </div>
+        </ul>
+      </div>
+    </drupal>
+    <!-- 3. Блок - Поддержка от Drupal -->
+    <div class="sup_from_drupal-coder">
+      <div class="sup_from_drupal-coder_header">
+        <div id="sup_from_drupal-coder_header_text1">
+          <a>Поддержка</a>
+        </div>
+        <div id="sup_from_drupal-coder_header_text2">
+          <a>от drupal-coder</a>
+        </div>
+      </div>
+      <div class="sup_from_drupal-coder_element">
+        <ul class="sup_from_drupal-coder_elem">
+          <div class="sup_from_drupal-coder_el1" id="sup_from_drupal-coder_el">
+            <li><a>01.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Постановка задачи по Email</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Удобная и привычная модель постановки задач, при которой задачи фиксируются и никогда не теряются.</a>
+            </div>
+            <img src="project_files/support1.svg" id="sup_img">
+          </div>
+          <div class="sup_from_drupal-coder_el1" id="sup_from_drupal-coder_el">
+            <li><a>02.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Система Helpdesk - отчетность, прозрачность</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.</a>
+            </div>
+            <img src="project_files/support2.svg" id="sup_img">
+          </div>
+          <div class="sup_from_drupal-coder_el2" id="sup_from_drupal-coder_el">
+            <li><a>03.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Расширенная техническая поддержка</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.</a>
+            </div>
+            <img src="project_files/support3.svg" id="sup_img">
+          </div>
+          <div class="sup_from_drupal-coder_el2" id="sup_from_drupal-coder_el">
+            <li><a>04.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Персональный менеджер проекта</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</a>
+            </div>
+            <img src="project_files/support4.svg" id="sup_img">
+          </div>
+        </ul>
+        <ul class="sup_from_drupal-coder_elem">
+          <div class="sup_from_drupal-coder_el1" id="sup_from_drupal-coder_el">
+            <li><a>05.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Удобные способы оплаты</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, PayPal.</a>
+            </div>
+            <img src="project_files/support5.svg" id="sup_img">
+          </div>
+          <div class="sup_from_drupal-coder_el1" id="sup_from_drupal-coder_el" id="sup_border">
+            <li><a>06.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Работаем с SLA и NDA</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Работа в рамках соглашений о конфиденциальности и об уровне качества работ.</a>
+            </div>
+            <img src="project_files/support6.svg" id="sup_img">
+          </div>
+          <div class="sup_from_drupal-coder_el2" id="sup_from_drupal-coder_el">
+            <li><a>07.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Штатные специалисты</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Надежные штатные специалисты, никаких фрилансеров.</a>
+            </div>
+            <img src="project_files/support7.svg" id="sup_img">
+          </div>
+          <div class="sup_from_drupal-coder_el2" id="sup_from_drupal-coder_el">
+            <li><a>08.</a></li>
+            <br><br>
+            <div claas="sup_from_drupal-coder_el_header">
+              <li><a id="sup_from_drupal-coder_el_header">Удобные каналы связи</a></li>
+            </div>
+            <br><br>
+            <div class="sup_from_drupal-coder_el_text">
+              <a>Консультации по телефону, скайпу, в месенджерах.</a>
+            </div>
+            <img src="project_files/support8.svg" id="sup_img">
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- 4. Блок - Экспертиза в Drupal, опыт 14 лет -->
+    <div class="blok_expert">
+      <div class="blok_expert_photo">
+        <img src="project_files/laptop.png" id="blok_expert_laptop">
+      </div>
+      <div class="blok_expert_body">
+        <img src="project_files/druplicon.svg" id="blok_expert_background_photo">
+        <div class="blok_expert_body_head">
+          <a>Экспертиза в Drupal, опыт 14 лет!</a>
+        </div>
+        <div class="blok_expert_body_main">
+          <ul>
+            <div class="blok_expert_body_main_text">
+              <div class="blok_expert_body_main_text1"><li>Только системный подход - контроль версий, резервирование и тестирование!</li></div>
+              <div class="blok_expert_body_main_text2"><li>Только Drupal-сайты, не берем на поддержку сайты на других CMS!</li></div>
+           </div>
+            <div class="blok_expert_body_main_text">
+              <div class="blok_expert_body_main_text1"><li>Учавствуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем<a href=""> свои модули Drupal</a></li></div>
+              <div class="blok_expert_body_main_text2"><li>Поддерживаем сайты на Drupal 5, 6, 7 и 8</li></div>
+           </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 5. Блок - Тарифы -->
+    <div class="blok_tarif">
+      <div id="blok_tarif_head">
+        <a>Тарифы</a>
+      </div>
+    <div class="blok_tarif_elements">
+      <div class="blok_tarif_element-l">
+        <div class="blok_tarif_element_head" id="blok_tarif_element_head">
+          <a>Стартовый</a>
+        </div>
+        <ul class="blok_tarif_element_body">
+          <li><input type="checkbox" checked="checked" id="blok_tarif_element_body" onclick="return false;" ><label for="blok_tarif_element_body">Консультации и работы по SEO</label></li>
+          <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Услуги дизайнера</label></li>
+          <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Неиспользованные оплаченные часы переносятся на следующий месяц</label></li>
+          <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Предоплата от 6 000 рублей в месяц</label></li>
+        </ul>
+        <div class="blok_tarif_button1">
+          <a>СВЯЖИТЕСЬ С НАМИ!</a>
+        </div>
+      </div>
+        <div class="blok_tarif_element-m">
+          <div class="blok_tarif_element_head" id="blok_tarif_element_head">
+            <a>Бизнес</a>
+          </div>
+          <ul class="blok_tarif_element_body">
+            <li><input type="checkbox" checked="checked" id="blok_tarif_element_body" onclick="return false;" ><label for="blok_tarif_element_body">Консультации и работы по SEO</label></li>
+            <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Услуги дизайнера</label></li>
+            <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Высокое время реакции - до 2 рабочих дней</label></li>
+            <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Неиспользованные оплаченные часы не переносятся</label></li>
+            <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Предоплата от 30 000 рублей в месяц</label></li>
+          </ul>
+          <div class="blok_tarif_button2">
+            <a>СВЯЖИТЕСЬ С НАМИ!</a>
+          </div>
+        </div>
+          <div class="blok_tarif_element-r">
+            <div class="blok_tarif_element_head" id="blok_tarif_element_head">
+              <a>VIP</a>
+            </div>
+            <ul class="blok_tarif_element_body">
+              <li><input type="checkbox" checked="checked" id="blok_tarif_element_body" onclick="return false;" ><label for="blok_tarif_element_body">Консультации и работы по SEO</label></li>
+              <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Услуги дизайнера</label></li>
+              <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Максимальное время реакции - в день обращения</label></li>
+              <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Неиспользованные оплаченные часы не переносятся</label></li>
+              <li><input type="checkbox" checked="checked"id="blok_tarif_element_body" onclick="return false;"><label for="blok_tarif_element_body">Предоплата от 270 000 рублей в месяц</label></li>
+            </ul>
+            <div class="blok_tarif_button2">
+              <a>СВЯЖИТЕСЬ С НАМИ!</a>
+            </div>
+          </div>
+      </div>
+      <div class="blok_tarif_pad">
+        <ul class="blok_tarif_pad_body">
+          <li>Вам не походят наши тарифы?</li>
+          <li>Оставьте заявку и мы предложим вам индивидуальные условия!</li>
+          <br><br>
+          <li><a href="">ПОЛУЧИТЬ ИНДИВИДУАЛЬНЫЙ ТАРИФ</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 6. Блок - Команда -->
+    <!-- 7. Блок - Последние кейсы -->
+    <div class="blok_case">
+      <div class="blok_case_head">
+        <a>Последние кейсы</a>
+      </div>
+      <div class="blok_case_body">
+        <ul class="blok_case_body1">
+            <div class="blok_case_body1_photo">
+              <img src="project_files/laptop_photo.jpg" id="blok_case_body1_laptop_photo">
+            </div>
+            <div class="blok_case_body1_text">
+              <div class="blok_case_body1_text_head"><a href="">Настройка кеширования данных. Апгрейд сервера. Ускорение работы сайта в 30 раз!</a></div>
+              <div class="blok_case_body1_text_main">
+                <li><a>21.12.2022</a></li>
+                <br><br>
+                <li>Влияение скорости загрузки страниц сайта на отказы и конверсии. Кейс ускорения...</li>
+              </div>
+            </div>
+        </ul>
+        <div class="blok_case_body2">
+          <div class="blok_case_body2_photo">
+            <img src="project_files/laptop_photo1.jpg" id="blok_case_body2_laptop_photo">
+          </div>
+          <div class="blok_case_body2_text">
+            <a href="">Использование отчетов Ecommerce в Яндекс.Метрике</a>
+          </div>
+        </div>
+      </div>
+      <div class="blok_case_body">
+        <div class="blok_case_body3">
+          <div class="blok_case_body3_photo">
+            <img src="project_files/laptop_photo2.jpg" id="blok_case_body3_photo">
+          </div>
+          <div class="blok_case_body3_text">
+            <div class="blok_case_body3_text_head"><a href="">Повышение конверсии страницы с формой заявки с применением AB-тестиирования</a></div>
+            <div class="blok_case_body3_text_body"><a>21.12.2022</a></div>
+          </div>
+        </div>
+        <div class="blok_case_body4">
+          <div class="blok_case_body4_photo">
+            <img src="project_files/laptop_photo3.jpg" id="blok_case_body4_photo">
+          </div>
+          <div class="blok_case_body4_text">
+            <div class="blok_case_body4_text_head"><a href="">Drupal 7: ускорение времени генерации страниц интернет-магазина на 32%</a></div>
+            <div class="blok_case_body4_text_body"><a>21.12.2022</a></div>
+          </div>
+        </div>
+        <ul class="blok_case_body5">
+          <div class="blok_case_body5_photo">
+            <img src="project_files/laptop_photo4.jpg" id="blok_case_body5_photo">
+          </div>
+          <div class="blok_case_body5_text">
+            <div class="blok_case_body5_text_head"><a href="">Обмен товарами и заказами интернет-магазинов на Drupal 7 в 1C: Предприятие, Мой склад, класс 365</a></div>
+            <div class="blok_case_body5_text_main">
+              <li><a>21.12.2022</a></li>
+              <li>Опубликован <a href="" id="blok_case_body5_text_main">релиз модуля</li>
+            </div>
+          </div>
+       </ul>
+      </div>
+    </div>
+    <!-- 8. Блок - Отзывы -->
+    <!-- 9. Блок - С нами работают -->
+    <div class="slayder">
+      <div class="slayder_text">
+        <div class="slayder_text_head"><a>С нами работают</a></div>
+        <div class="slayder_text_body"><a>Десятки компаний доверяют нам самое ценное, что у них есть в Интернете - свои сайты. Мы делаем все, чтобы наше сотрудничество было долгим</a></div>
+      </div>
+      <div class="slayder_body">
+        <div class="slayder_body1">
+          <ul>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+          </ul>
+        </div>
+        <div class="slayder_body2">
+          <ul>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+            <li><img src="project_files/slayder.jpg" id="slayder_body"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
