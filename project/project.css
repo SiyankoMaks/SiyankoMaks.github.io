@@ -1,3 +1,4 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 /* 1. Шапка сайта + навигационное меню */
 @media(min-width:960px){
 	
@@ -754,7 +755,7 @@
 	}
 	
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 .social a {
     text-align: center;
     width: 48px;
