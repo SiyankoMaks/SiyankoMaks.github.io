@@ -23,6 +23,15 @@ $(function(){
 
 
 
+/* 8. Блок - Отзывы */
+$(".multiple-items").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
 
 
 $("#send1").click(function () {
