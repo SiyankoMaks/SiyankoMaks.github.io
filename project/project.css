@@ -699,6 +699,41 @@
 	}
 
 	/* 8. Блок - Отзывы */
+	.content1 {
+		display: flex;
+		flex-direction:column;
+		margin: auto;
+		background:white;
+	    box-shadow: 5px 10px 90px -15px;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		box-sizing: border-box;
+	  }
+	.content1 a{
+		text-align: center;
+		font-size:50px;
+		font-weight: bold;
+		color: black;
+	}
+	.abcd a{
+		background: #fff;
+		color: #3498db;
+		font-size: 36px;
+		padding: 2%;
+		position: relative;
+		text-align: center;
+		font-size:small;
+		float: left;
+	  }
+	  .abcd > img{
+		  margin:auto;
+		  text-align: center;
+		  margin-top:2%;
+		  display:flex;
+		  margin-bottom:2%;
+		  -webkit-user-drag: none;
+	  }
 
 	/* 9. Блок - С нами работают */
 
