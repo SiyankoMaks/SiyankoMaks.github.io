@@ -857,7 +857,49 @@
 		-webkit-user-drag: none;
 	}
 	
+/* 10. Блок - FAQ */
 
+    .faq1{
+	  margin:auto;
+	  float: left;
+	  margin-left: 10%;
+	  margin-right: 10%;
+	  width: 80%;
+	  margin-bottom: 5%;
+    }
+	.hhh{
+	 display:flex;
+	 justify-content:center;
+	 margin-top: 10%;
+	 margin-bottom: 5%;
+	 font-size:50px;
+	 font-weight: bold;
+	 color: black;
+	}
+	.support{
+	  border:4px solid orange;
+	}
+	.faq1 li{
+		margin-left: 4%;
+	}
+	.part1{
+		color:red;
+	font-size:20px;
+		font-weight:1000;
+	}
+	.part2{
+		margin-left:5%;
+		color:grey;
+	}
+	
+	.part3{
+	 color:black;
+	  font-weight:1000;
+	  margin-top:15px;
+	 font-size:18px;
+	}
+	
+	
 
 .social a {
     text-align: center;
