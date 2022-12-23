@@ -529,6 +529,74 @@
 	}
 
 	/* 6. Блок - Команда */
+	
+	.content2{
+		margin: 5%;
+		float: left;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.content2 > h1{
+		display:flex;
+		justify-content: center;
+		text-align: center;
+		font-size:50px;
+		font-weight: bold;
+		color: black;
+	}
+	.comp-elem > img{
+		max-height:150px;
+	}
+	.compet{
+		display:flex;
+		justify-content: space-around;
+		
+	}
+	.members{
+	
+	  display: flex;
+	  flex-wrap: wrap;
+	  align-content: space-between;
+	}
+		  
+	.im123, .member{
+		max-width:280px;    
+		
+	}
+	.member > img{
+		margin-top:19px;
+		max-height:280px;
+	}
+	.member{
+		margin-left:100px;
+	}
+	.a{
+	  font-weight:1000;
+	font-size: x-large;
+		  margin-top:5px;
+	}
+	.c{
+	  font-size: x-small;
+		margin-top:7px;
+	}
+	#send2 {
+		display: flex;
+		justify-content: center;
+	 border:2px inset black;
+	 background:none;	 
+	 width:150px;
+	 height:30px;
+		font-weight:1000;
+		  margin-top:100px;
+	 margin-top: 100px;
+	 color: orange;
+	font-weight:1000;
+	}
+	#send2:hover {
+	transition: .2s;
+	 background: blue;
+	}
 
     /* 7. Блок - Последние кейсы */
 
