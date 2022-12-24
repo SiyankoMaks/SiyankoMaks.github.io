@@ -37,11 +37,13 @@
 	}
 	  
 	.container{
-		text-align: center;
+
 		position: relative;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 80%;
 	}
 	#logo{
-		margin: -0.4vw 2vw 0vw 2vw;
 		border: 0;
 		width: 150px;
 		height: 50px;
@@ -54,14 +56,14 @@
 		vertical-align: middle;
 		padding: 0;
 		width: auto;
-		margin-left: 1.7vw;
+		
 	}
 	
 	/* Выпадающее меню */
 	.second{
 		display: none;
 		position: absolute;
-		margin-left:90px;
+		margin-left: 12.75%;
 	}
 	.second > li{
 		position: static;
@@ -72,20 +74,25 @@
 	}
 	#nav:hover .second > li {
 		display: block;
+		background-color: orangered;
+		padding-top: 1%;
 	}
 	.menu li a:hover{
 		background: #FF4500;
 	}
+	.second li a:hover{
+		background: black;
+	}
 	/* Конец Выпадающее меню */
 
-	
+
 	ul.menu {
 	  display: inline-block;
 	}
 	ul.menu li {
 		display: inline;
 		padding: 0; 
-		margin-left: 3vw;
+		margin-left: 4vw;
 	}
 	.header li{
 		padding: 0;
