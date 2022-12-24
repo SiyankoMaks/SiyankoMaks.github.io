@@ -35,9 +35,10 @@ $(".multiple-items").slick({
 
 
 $("#send1").click(function () {
-	document.getElementById("1").value = "";
+    document.getElementById("1").value = "";
     document.getElementById("2").value = "";
     document.getElementById("3").value = "";
+    document.getElementById("4").value = "";
     document.querySelector("#happy").checked = false;
 
     var slapform = new Slapform();
