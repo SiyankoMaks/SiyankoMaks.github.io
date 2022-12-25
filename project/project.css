@@ -139,7 +139,7 @@
 		text-align: left;
 		padding: 20px 0px 50px 0px;
 	}
-	#text_col{
+	.text_col{
 		vertical-align: middle;
 		font-size:xx-large;
 		font-weight: bold;
@@ -169,6 +169,47 @@
 		height: -webkit-fill-available;
 	}
 	#block_2{
+		float: left;
+		margin: 0 auto;
+		width: 30%;
+		text-align: left;
+		border-left: 4px solid #ff4f00;
+		padding: 0px 0px 0px 7px;
+		vertical-align: middle;
+		height: -webkit-fill-available;
+	}
+	#block_3{
+		float: left;
+		margin: 0 auto;
+		width: 30%;
+		text-align: left;
+		border-left: 4px solid #ff4f00;
+		padding: 0px 0px 0px 7px;
+		vertical-align: middle;
+		height: -webkit-fill-available;
+	}
+
+	#block_4{
+		margin-top: 50px;
+		float: left;
+		width: 30%;
+		text-align: left;
+		border-left: 4px solid #ff4f00;
+		padding: 0px 0px 0px 7px;
+		vertical-align: middle;
+		height: -webkit-fill-available;
+	}
+	#block_5{
+		margin-top: 50px;
+		float: left;
+		width: 30%;
+		text-align: left;
+		border-left: 4px solid #ff4f00;
+		padding: 0px 0px 0px 7px;
+		vertical-align: middle;
+		height: -webkit-fill-available;
+	}
+	#block_6{
 		margin-top: 50px;
 		float: left;
 		width: 30%;
@@ -208,11 +249,33 @@
 		padding: 0vw 0vw 3vw 0vw;
 		margin-left: 10%;
 		margin-right: 10%;
+		width: 80%;
 	}
 	#comp_1{
 		padding-bottom: 1.5vw;
 	}
-	#sup_str_text{
+	#comp_2{
+		padding-bottom: 1.5vw;
+	}
+	#comp_3{
+		padding-bottom: 1.5vw;
+	}
+	#comp_4{
+		padding-bottom: 1.5vw;
+	}
+	#comp_5{
+		padding-bottom: 1.5vw;
+	}
+	#comp_6{
+		padding-bottom: 1.5vw;
+	}
+	#comp_7{
+		padding-bottom: 1.5vw;
+	}
+	#comp_8{
+		padding-bottom: 1.5vw;
+	}
+	.sup_str_text{
 		width: 15%;
 		float: left;
 		margin: 0;
