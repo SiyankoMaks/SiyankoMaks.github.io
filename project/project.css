@@ -1422,5 +1422,730 @@ ul.menu li {
 		list-style: none;
 		padding: 0;
 	}
+	
+	/* 5. Блок - Тарифы */
+
+	.blok_tarif{
+		width: 100%;
+		float: left;
+		background:url(project_files/D-background-opacity.svg);
+		background-size: cover;
+	}
+	#blok_tarif_background_photo{
+		filter:contrast(80%);
+		position: absolute;
+		margin-right: 50%;
+		width: 100%;
+		background-size: cover;
+		vertical-align: middle;
+		
+	} 
+	#blok_tarif_head{
+		text-align: center;
+		font-size:22px;
+		font-weight: bold;
+		padding-top: 10vw;
+		padding-left: 10%;
+		padding-right: 10%;
+		width: 80%;
+		padding-bottom: 7vw;
+		margin-top: 5%;
+	}
+	#blok_tarif_element_head{
+		border-bottom: 2px solid #aaa;
+		padding: 0vw 0vw 2vw 0vw;
+		vertical-align: middle;
+	}
+	.blok_tarif_element_head a{
+		font-weight:bold;
+		font-size: 20px;
+		color: orangered;
+	}
+	.blok_tarif_elements{
+		
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.blok_tarif_elements li{
+		padding: 7px;
+		list-style: none;
+	}
+	.blok_tarif_element-l{
+		width: 95%;
+		float: left;
+		border: 2px solid gainsboro;
+		padding: 4vw 2vw 3.3vw 2vw;
+		border-radius: 5px;
+		background-color: white;
+	}
+	
+	.blok_tarif_element-l a{
+		margin-right: 2%;
+	}
+	.blok_tarif_element-m{
+		width: 95%;
+		float: left;
+		border: 2px solid gainsboro;
+		padding: 4vw 2vw 3.3vw 2vw;
+		border-radius: 5px;
+		background-color: white;
+		margin-top: 5%;
+	}
+	
+	.blok_tarif_element-m a{
+		margin-right: 2%;
+	}
+	.blok_tarif_element-r{
+		width: 95%;
+		float: left;
+		border: 2px solid gainsboro;
+		padding: 4vw 2vw 3.3vw 2vw;
+		border-radius: 5px;
+		background-color: white;
+		margin-top: 5%;
+	}
+
+	.blok_tarif_element-r a{
+		margin-right: 2%;
+	}
+
+	.blok_tarif_element_body{
+		margin-top: 5vw;
+		margin-bottom: 3vw;
+		padding-left: 0;
+	}
+	.blok_tarif_element_body input{
+		position: relative;
+	}
+	.blok_tarif_element_body label{
+		display: inline-flex;
+		
+	}
+	input[type="checkbox"] {
+		display: none;
+	}
+	   
+	  /* стили для метки */
+	.blok_tarif_element_body label {
+	    color: #000;
+		cursor: default;
+		font-weight: normal;
+		line-height: 30px;
+		padding: 10px 0;
+		vertical-align: middle;
+	}
+	   
+	  /* формируем внешний вид чекбокса в псевдоэлементе before */
+	.blok_tarif_element_body label:before {
+		content: " ";
+		color:orangered;
+		display: inline-block;
+		font-size: 15px;
+		font-weight: 500;
+		margin-right: 15px;
+		position: relative;
+		text-align: center;
+		text-indent: 0px;
+		width: 30px;
+		height: 30px;
+		background: #FFF;
+		border: 1px solid #e3e3e3;
+		border-image: initial;
+		vertical-align: middle;
+	}
+	   
+	  /* вариации внешнего вида в зав-ти от статуса checkbox */
+	  /* checked */
+	.blok_tarif_element_body input:checked + label:before {
+		content: '\2713';
+		float: left;
+	}
+	  /* disabled */
+	.blok_tarif_element_body input:disabled + label:before {
+		background: #eee;
+		color: #aaa;
+	}
+	.blok_tarif_button1{
+		text-indent: 30px;
+		border: 2px solid #ff4f00;
+		padding: 20px 10px 20px 15px;
+		border-radius: 5px;
+		margin-top: 5.3vw;
+		margin-bottom: 5%;
+	}
+	.blok_tarif_button1 a{
+		color: orangered;
+		font-weight: 800;
+		margin-left: 7%;
+	}
+	.blok_tarif_button1:hover{
+		background-color: #000;
+		transition: 0.7s;
+	}
+	.blok_tarif_button2{
+		text-indent: 30px;
+		border: 2px solid #ff4f00;
+		padding: 20px 10px 20px 15px;
+		border-radius: 5px;
+		margin-bottom: 5%;
+	}
+	.blok_tarif_button2 a{
+		color: orangered;
+		font-weight: 800;
+		margin-left: 7%;
+		
+	}
+	.blok_tarif_button2:hover{
+		background-color: #000;
+		transition: 0.7s;
+	}
+	
+	.blok_tarif_pad{
+		padding-top: 5vw;
+		float: left;
+		text-align: center;
+	}
+	.blok_tarif_pad_body{
+		list-style: none;
+		padding: 7px;
+	}
+	.blok_tarif_pad_body a{
+		color: #000;
+		font-weight: 800;
+	}
+
+	/* 6. Блок - Команда */
+
+	.content2{
+		margin: 5%;
+		float: left;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.content2 > h1{
+		display:flex;
+		justify-content: center;
+		text-align: left;
+		font-size:22px;
+		font-weight: bold;
+		color: black;
+	}
+	.comp-elem > img{
+		max-height:150px;
+	}
+	.compet{
+		display:flex;
+		flex-direction:column;
+		
+	}
+	.members{
+
+		display: flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		
+	}
+	.im123, .member{
+		max-width:100%;
+		
+	}
+	.member > img{
+		margin-top:19px;
+		max-height:280px;
+	}
+	.member{
+		max-width:280px;
+		
+	}
+	.a{
+		font-weight:1000;
+		font-size: x-large;
+		margin-top:5px;
+	}
+	.c{
+		font-size: x-small;
+		margin-top:7px;
+	}
+
+	/* 7. Блок - Последние кейсы */
+
+	.blok_case{
+		width: 100%;
+		float: left;
+	}
+	.blok_case_head{
+		text-align: center;
+		font-size:22px;
+		font-weight: bold;
+		color: black;
+		margin-bottom: 2%;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+
+	.blok_case_body{
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 2%;
+		float: left;
+	}
+	.blok_case_body1{
+		float: left;
+		width: 80%;
+	}
+	.blok_case_body2{
+		float: left;
+		width: 80%;
+	}
+	
+	#blok_case_body1_laptop_photo{
+		width: 100%;
+		border-radius: 3%;
+	}
+	.blok_case_body1_text{
+		padding: 10% 2% 0% 2%;
+	}
+	.blok_case_body1_text_head a{
+		font-weight:bolder;
+		font-size: 15px;
+		text-decoration: none;
+		color: black;
+	}
+	.blok_case_body1_text_head:hover{
+		text-decoration:underline;
+	}
+	.blok_case_body1_text_main li{
+		list-style: none;
+		font-size: 10px;
+	}
+
+	.blok_case_body2{
+		margin-left: 2%;
+	}
+	#blok_case_body2_laptop_photo{
+		position: absolute;
+		width: 75%;
+		margin-top: 1%;
+		border-radius: 2%;
+		margin-left: 10%;
+		margin-right: 15%;
+	}
+	.blok_case_body2_text{
+		position: relative;
+		padding-top: 40%;
+		padding-left: 20%;
+		
+	}
+	.blok_case_body2_text a{
+		font-size: 13px;
+		font-weight: bolder;
+		color: rgb(0 129 167);
+		text-decoration: none;
+	}
+	.blok_case_body2_text a:hover{
+		text-decoration: underline;
+	}
+
+	.blok_case_body3{
+		float: left;
+		width: 80%;
+	}
+	#blok_case_body3_photo{
+		position: absolute;
+		width: 75%;
+		margin-top: 5%;
+		border-radius: 2%;
+		margin-left: 11.5%;
+		margin-right: 15%;
+	}
+	.blok_case_body3_text{
+		position: relative;
+		padding-top: 55%;
+		padding-left: 35%;
+	}
+	.blok_case_body3_text_head a{
+		font-size: 10px;
+		font-weight: bolder;
+		color: whitesmoke;
+		text-decoration: none;
+	}
+	.blok_case_body3_text_body a{
+		color: whitesmoke;
+	}
+	.blok_case_body3_text a:hover{
+		text-decoration: underline;
+	}
+
+	.blok_case_body4{
+		width: 100%;
+		float: left;
+		margin-top: 5%;
+	}
+	#blok_case_body4_photo{
+		position: absolute;
+		width: 75%;
+		margin-top: 1%;
+		border-radius: 2%;
+		margin-left: 11%;
+		margin-right: 11%;
+	}
+	.blok_case_body4_text{
+		position: relative;
+		padding-top: 5%;
+		padding-left: 15%;
+		padding-right: 10%;
+	}
+	.blok_case_body4_text_head a{
+		font-size: 10px;
+		font-weight: bolder;
+		color: white;
+		text-decoration: none;
+	}
+	.blok_case_body4_text_body a{
+		color: white;
+	}
+	.blok_case_body4_text a:hover{
+		text-decoration: underline;
+	}
+
+	.blok_case_body5{
+		float: left;
+		width: 100%;
+		margin-top: 47%;
+		margin-left: -7%;
+	}
+	#blok_case_body5_photo{
+		width: 85%;
+		border-radius: 3%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.blok_case_body5_text{
+		padding: 5% 10% 0% 10%;
+	}
+	.blok_case_body5_text_head a{
+		font-weight:bolder;
+		font-size: 15px;
+		text-decoration: none;
+		color: black;
+	}
+	.blok_case_body5_text_head:hover{
+		text-decoration:underline;
+	}
+	.blok_case_body5_text_main li{
+		list-style: none;
+		font-size: 10px;
+		padding-bottom: 1vw;
+	}
+	#blok_case_body5_text_main{
+		text-decoration: none;
+		color: black;
+	}
+	#blok_case_body5_text_main:hover{
+		text-decoration: underline;
+	}
+
+	/* 8. Блок - Отзывы */
+	.content1 {
+		display: flex;
+		flex-direction:column;
+		margin: auto;
+		background:white;
+	    box-shadow: 5px 10px 90px -15px;
+		width: 80%;
+		margin-left: 13%;
+		margin-right: 10%;
+		box-sizing: border-box;
+	}
+	.content1 a{
+		text-align: center;
+		font-size:25px;
+		font-weight: bold;
+		color: black;
+	}
+	.abcd a{
+		background: #fff;
+		color: #3498db;
+		font-size: 20px;
+		padding: 2%;
+		position: relative;
+		text-align: center;
+		font-size:small;
+		float: left;
+	}
+	.abcd > img{
+		margin:auto;
+		text-align: center;
+		margin-top:2%;
+		display:flex;
+		margin-bottom:2%;
+		-webkit-user-drag: none;
+	}
+
+	  /* 9. Блок - С нами работают */
+
+	.slayder{
+		margin-top: 5%;
+		width: 100%;
+		float: left;
+		text-align: center;
+		list-style: none;
+	}
+	.slayder_text{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.slayder_text_head a{
+		font-size:25px;
+		font-weight: bold;
+		color: black;
+	}
+	.slayder_text_body{
+		margin-top: 1%;
+		margin-bottom: 5%;
+		text-align: left;
+	}
+	.slayder_text_body a{
+		font-size: 10px;
+	}
+	.slayder_body{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.slayder_body1{
+
+		width: 30%;
+		margin-left: -10%;
+		margin-bottom: 1%;
+	}
+	.slayder_body1 img{
+		width: 95%;
+		padding-left: 5%;
+		position: relative;
+       -webkit-user-drag: none;
+
+	}
+	.slayder_body2{
+		width: 30%;
+		margin-left: -25%;
+	}
+	.slayder_body2 img{
+		width: 95%;
+		padding-left: 5%;
+		position: relative;
+		-webkit-user-drag: none;
+	}
+
+	/* 10. Блок - FAQ */
+
+    .faq1{
+		margin:auto;
+		float: left;
+		margin-left: 3%;
+		margin-right: 10%;
+		width: 90%;
+		margin-bottom: 5%;
+	}
+	.hhh{
+		display:flex;
+		justify-content:center;
+		margin-top: 10%;
+		margin-bottom: 5%;
+		font-size:25px;
+		font-weight: bold;
+		color: black;
+	}
+	.support{
+		border:4px solid orange;
+	}
+	.faq1 li{
+		margin-left: 14%;	
+		margin-right: 10%;
+	}
+	.part1{
+		color:red;
+		font-size:14px;
+		font-weight:1000;
+	}
+	.part2{
+		margin-left:14%;
+		color:grey;
+	}
+		
+	.part3{
+		color:black;
+		font-weight:1000;
+		margin-top:10%;
+		font-size:14px;
+	}
+
+
+	/* 11. Блок - Подвал */
+	.social a {
+		text-align: center;
+		width: 48px;
+		height: 48px;
+		float: left;
+		background: #fff;
+		border: 1px solid #ccc;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+		border-radius: 24px;
+		margin: 0 10px 10px 0;
+		padding: 6px;
+		color: #000;
+		}
+		.youtube a:hover {background: #c4302b; color: #fff;}
+		.twitter a:hover {background: #00acee; color: #fff;}
+		.facebook a:hover {background: #3b5998; color: #fff;}
+		.vk a:hover {background: #5d84ae; color: #fff;}
+		footer{
+		position: relative;
+		}
+		.text-s{
+		color:#999999;
+		margin-top:20px;
+		font-size: 13px;
+		}
+		.footer{
+		display:flex;
+		float: left;
+		flex-direction: column;
+		width:100%;
+		padding-left: 3%;
+		background-image: url('project_files/5137894.jpg')
+		
+		}
+		.footer1{
+		display:flex;
+		flex-direction:column;
+		justify-content: space-around;
+		}
+		ins{
+		color:white;
+		}
+		h5{
+		color:#999999;
+		}
+		.cont{
+		display:flex;
+		
+		}
+		.elem-form{
+		border:4px inset black;
+		background:black;
+		width:200px;
+		color:white;
+		}
+		.ppp {
+		color:white;
+		}
+		#send1 {
+		border:2px inset #ff5722;
+		
+		border-radius:44px;
+		background:#FF5722;
+		width:80%;
+		height:50px;
+		margin-bottom:100px;
+		color: #0051ff;
+		font-weight:1000;
+		margin-left: 9%;
+		}
+		#send1:hover {
+		transition: .2s;
+		background: none;
+		}
+		.custom-checkbox {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		}
+		
+		.custom-checkbox+label {
+		display: inline-flex;
+		align-items: center;
+		user-select: none;
+		font-size: 11px;
+		}
+		.custom-checkbox+label::before {
+		content: '';
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		flex-shrink: 0;
+		flex-grow: 0;
+		border: 1px solid #adb5bd;
+		border-radius: 0.25em;
+		margin-right: 0.5em;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50% 50%;
+		}
+		
+		.custom-checkbox:checked+label::before {
+		border-color: #0b76ef;
+		background-color: #0b76ef;
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+		}
+		
+		.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+		border-color: #b3d7ff;
+		}
+		
+		.custom-checkbox:not(:disabled):active+label::before {
+		background-color: #b3d7ff;
+		border-color: #b3d7ff;
+		}
+		
+		.custom-checkbox:focus+label::before {
+		box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+		}
+		
+		.custom-checkbox:focus:not(:checked)+label::before {
+		border-color: #80bdff;
+		}
+		
+		.custom-checkbox:disabled+label::before {
+		background-color: #e9ecef;
+		}
+		.content1 {
+		display: flex;
+		flex-direction:column;
+		margin: auto;
+		background:white;
+		box-shadow: 5px 10px 90px -15px;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		box-sizing: border-box;
+		}
+		.content1 a{
+		text-align: center;
+		font-size:50px;
+		font-weight: bold;
+		color: black;
+		}
+		.abcd a{
+		margin-right:0%;
+		background: #fff;
+		color: #3498db;
+		font-size: 36px;
+		padding: 2%;
+		position: relative;
+		text-align: center;
+		font-size:small;
+		float: left;
+		}
+		.abcd > img{
+		width:80%;
+		margin:auto;
+		text-align: center;
+		margin-top:2%;
+		display:flex;
+		margin-bottom:2%;
+		-webkit-user-drag: none;
+		}
 
 }
