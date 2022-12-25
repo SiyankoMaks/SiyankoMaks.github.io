@@ -1232,4 +1232,195 @@ ul.menu li {
 	height: 50vw;
 }
 
+
+/* 2. Блок: 13 лет  */
+.drupal_sup{
+	margin: 45% 0% 10% 0%;
+	float: left;
+}
+.drup_sup_1{
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.sup_1_text{
+	font-weight: bold;
+	text-align: left;
+	font-size:22px;
+	width: 100%;
+}
+.drupal_sup1 li{
+	padding: 0;
+	list-style: none;
+
+}
+.drupal_sup li{
+	padding: 0;
+	list-style: none;
+	font-size: 11px;
+}
+.drupal a{
+	margin-top: 10px;
+}
+
+.drup_sup_str{
+	float: left;
+	padding: 0vw 0vw 3vw 0vw;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+#comp_1{
+	padding-bottom: 1.5vw;
+	padding-left: 7%;
+}
+#sup_str_text{
+	width: 48%;
+	float: left;
+	margin: 0;
+	margin-right: 2%;
+	height: 50vw;
+}
+
+
+	/* 3. Блок - Поддержка от Drupal */
+
+	.sup_from_drupal-coder{
+		margin-bottom: -10%;
+		position: relative;
+	}
+	.sup_from_drupal-coder_header{
+		
+		text-align: center;
+	}
+	#sup_from_drupal-coder_header_text1{
+		text-align: center;
+		font-weight: bold;
+	    font-size:22px;
+	}
+	#sup_from_drupal-coder_header_text2{
+		text-align: center;
+		margin-bottom: 5vw;
+		font-size:22px;
+		font-weight: bold;
+	}
+	.sup_from_drupal-coder li{
+		padding: 0;
+		list-style: none;
+	}
+	.sup_from_drupal-coder_elem{
+		float: left;
+		margin-left: 1%;
+		margin-right: 2%;
+	}
+	.sup_from_drupal-coder_el1{
+		float:left;
+		width: 95%;
+		margin: 0;
+		border: 5px solid ghostwhite;
+		padding: 1% 0% 0% 0%;
+		margin-right: 1%;
+		margin-bottom: 2%;
+		display: table;
+		table-layout: fixed;
+		background-color: white;
+	}
+	.sup_from_drupal-coder_el2{
+		float:left;
+		width: 95%;
+		margin: 0;
+		border: 5px solid ghostwhite;
+		padding: 1% 0% 0% 0%;
+		margin-right: 1%;
+		margin-bottom: 2%;
+		display: table;
+		table-layout: fixed;
+		background-color: white;
+	}
+	#sup_from_drupal-coder_el_header{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_img{
+		float: right;
+	}
+
+
+	/* 4. Блок - Экспертиза в Drupal, опыт 14 лет */
+
+	.blok_expert{
+		background-color: black;
+		float: left;
+		width: 100%;
+		margin-top: -15%;
+		height: 185vw;
+	}
+	.blok_expert_photo{
+		position: absolute;
+
+	}
+	#blok_expert_background_photo{
+		position: absolute;
+		margin-top: 100%;
+		-webkit-user-drag: none;
+		width: 100%;
+	}
+	
+
+	#blok_expert_laptop{
+		width: 70%;
+		float: left;
+		padding-top: 130%;
+		margin-bottom: -60%;
+		position: relative;
+	}
+	
+	.blok_expert_body_head{
+		width: 80%;
+		margin-left: 5%;
+		padding-top: 15%;
+	}
+	.blok_expert_body_head a{
+		color: white;
+		font-size: 20px;
+		font-weight: bolder;
+	}
+	.blok_expert_body{
+		float: left;
+		width: 100%;
+		position: relative;
+	}
+	.blok_expert_body_main_text{
+		padding-top: 10%;
+		
+	}
+	#blok_expert_body_main_text{
+		padding-top: 20%;
+		margin-top: 23%;
+	}
+	.blok_expert_body_main_text1{
+		float: left;
+		border-left: 4px solid orangered;
+		padding-left: 1%;
+	}
+	.blok_expert_body_main_text1 a{
+		color: orangered;
+		text-decoration: none;
+		position: relative;
+	}
+	.blok_expert_body_main_text2{
+		float: left;
+		margin-right: 20%;
+		border-left: 4px solid orangered;
+		padding-left: 1%;
+		margin-top: 5%;
+	}
+
+	.blok_expert_body_main li{
+		color: white;
+		list-style: none;
+		padding: 0;
+	}
+
 }
