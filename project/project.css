@@ -1228,8 +1228,8 @@ ul.menu li {
 	width: 90%;
 	vertical-align: middle;
 	text-align: center;
-	margin-left: 5%;
-	margin-right: 15%;
+	margin-left: 1%;
+	margin-right: 5%;
 }
 .shapka{
 	text-align: center;
@@ -1246,7 +1246,7 @@ ul.menu li {
 	width: 100%;
 	text-align: left;
 }
-#text_col{
+.text_col{
 	vertical-align: middle;
 	font-size:xx-large;
 	font-weight: bold;
@@ -1257,7 +1257,7 @@ ul.menu li {
 }
 .tarif{
 	float: left;
-	margin-top: 5%;
+	margin-top: 10%;
 	margin-bottom: 40%;
 	width: 100%;
 }
@@ -1291,6 +1291,30 @@ ul.menu li {
 	height: 50vw;
 }
 #block_2{
+    height: -webkit-fill-available;
+	height: 50vw;
+}
+#block_3{
+    height: -webkit-fill-available;
+	height: 50vw;
+}
+#block_4{
+    height: -webkit-fill-available;
+	height: 50vw;
+}
+#block_5{
+    height: -webkit-fill-available;
+	height: 50vw;
+}
+#block_6{
+    height: -webkit-fill-available;
+	height: 50vw;
+}
+#block_7{
+    height: -webkit-fill-available;
+	height: 50vw;
+}
+#block_8{
     height: -webkit-fill-available;
 	height: 50vw;
 }
@@ -1338,7 +1362,27 @@ ul.menu li {
 	padding-bottom: 1.5vw;
 	padding-left: 7%;
 }
-#sup_str_text{
+#comp_2{
+	padding-bottom: 1.5vw;
+	padding-left: 7%;
+}
+#comp_3{
+	padding-bottom: 1.5vw;
+	padding-left: 7%;
+}
+#comp_4{
+	padding-bottom: 1.5vw;
+	padding-left: 7%;
+}
+#comp_5{
+	padding-bottom: 1.5vw;
+	padding-left: 7%;
+}
+#comp_6{
+	padding-bottom: 1.5vw;
+	padding-left: 7%;
+}
+.sup_str_text{
 	width: 48%;
 	float: left;
 	margin: 0;
