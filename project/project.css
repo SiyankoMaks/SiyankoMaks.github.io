@@ -108,8 +108,8 @@
 		margin-top: 70px;
 		padding: 0;
 		text-align: center;
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 1%;
+		padding-right: 3%;
 	}
 	.item_1{
 		vertical-align: middle;
@@ -1173,6 +1173,8 @@ body{
 
 /* Выпадающее меню */
 .second{
+	
+		background: #FF4500;
 	display: none;
 	position: absolute;
 	margin-left: 12.75%;
@@ -1181,10 +1183,8 @@ body{
 	position: static;
 	display: block;	
 }
-#nav:hover .second {
-	display: block;
-}
-#nav:hover .second > li {
+
+#nav .second > li {
 	display: block;
 	background-color: orangered;
 	padding-top: 1%;
@@ -1412,14 +1412,17 @@ ul.menu li {
 		font-size:22px;
 		font-weight: bold;
 	}
+	.sup_from_drupal-coder_element{
+		margin-left: -2%;
+		margin-right: 3%;
+		width: 90%;
+	}
 	.sup_from_drupal-coder li{
 		padding: 0;
 		list-style: none;
 	}
 	.sup_from_drupal-coder_elem{
 		float: left;
-		margin-left: 1%;
-		margin-right: 2%;
 	}
 	.sup_from_drupal-coder_el1{
 		float:left;
@@ -1498,6 +1501,11 @@ ul.menu li {
 		width: 100%;
 		position: relative;
 	}
+	.blok_expert_body_main{
+		width: 95%;
+	    margin-left: -6%;
+		margin-right: 2%;
+	}
 	.blok_expert_body_main_text{
 		padding-top: 10%;
 		
@@ -1571,7 +1579,7 @@ ul.menu li {
 	.blok_tarif_elements{
 		
 		margin-left: 2%;
-		margin-right: 2%;
+		margin-right: 8%;
 	}
 	.blok_tarif_elements li{
 		padding: 7px;
@@ -1727,7 +1735,7 @@ ul.menu li {
 		margin: 5%;
 		float: left;
 		width: 80%;
-		margin-left: 10%;
+		margin-left: 7%;
 		margin-right: 10%;
 	}
 	.content2 > h1{
@@ -1778,7 +1786,7 @@ ul.menu li {
 	/* 7. Блок - Последние кейсы */
 
 	.blok_case{
-		width: 100%;
+		width: 90%;
 		float: left;
 	}
 	.blok_case_head{
@@ -1792,7 +1800,7 @@ ul.menu li {
 	}
 
 	.blok_case_body{
-		margin-left: 5%;
+		margin-left: -3%;
 		margin-right: 5%;
 		margin-bottom: 2%;
 		float: left;
@@ -1960,9 +1968,9 @@ ul.menu li {
 		margin: auto;
 		background:white;
 	    box-shadow: 5px 10px 90px -15px;
-		width: 80%;
-		margin-left: 13%;
-		margin-right: 10%;
+		width: 90%;
+		margin-left: 3%;
+		margin-right: 3%;
 		box-sizing: border-box;
 	}
 	.content1 a{
@@ -2024,7 +2032,7 @@ ul.menu li {
 	.slayder_body1{
 
 		width: 30%;
-		margin-left: -10%;
+		margin-left: -15%;
 		margin-bottom: 1%;
 	}
 	.slayder_body1 img{
@@ -2036,7 +2044,7 @@ ul.menu li {
 	}
 	.slayder_body2{
 		width: 30%;
-		margin-left: -25%;
+		margin-left: -30%;
 	}
 	.slayder_body2 img{
 		width: 95%;
@@ -2050,8 +2058,8 @@ ul.menu li {
     .faq1{
 		margin:auto;
 		float: left;
-		margin-left: 3%;
-		margin-right: 10%;
+		margin-left: -5%;
+		margin-right: 3%;
 		width: 90%;
 		margin-bottom: 5%;
 	}
@@ -2063,6 +2071,7 @@ ul.menu li {
 		font-size:25px;
 		font-weight: bold;
 		color: black;
+		padding-left: 15%;
 	}
 	.support{
 		border:4px solid orange;
@@ -2119,8 +2128,9 @@ ul.menu li {
 		display:flex;
 		float: left;
 		flex-direction: column;
-		width:100%;
+		width:90%;
 		padding-left: 3%;
+		padding-right: 7%;
 		background-image: url('project_files/5137894.jpg')
 		
 		}
@@ -2254,5 +2264,4 @@ ul.menu li {
 		margin-bottom:2%;
 		-webkit-user-drag: none;
 		}
-
 }
