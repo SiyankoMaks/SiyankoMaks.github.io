@@ -51,3 +51,6 @@ $("#send1").click(function () {
     document.getElementById("4").value = "";
     return false;
 });
+$("#nav").on("click", function() {
+    $(".second").toggle();
+});
