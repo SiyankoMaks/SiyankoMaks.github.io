@@ -1,3 +1,4 @@
+/*global $, Slapform */
 // Авто-прокрутка слайдера 1
 
 $(function(){
@@ -22,7 +23,6 @@ $(function(){
 
 
 
-
 /* 8. Блок - Отзывы */
 $(".multiple-items").slick({
     dots: true,
@@ -32,12 +32,11 @@ $(".multiple-items").slick({
     slidesToScroll: 1
 });
 
-
-
+// Блок - подвал
 $("#send1").click(function () {
-    
+    document.querySelector("#happy").checked = false;
 
-    var slapform = new Slapform();
+    let slapform = new Slapform();
     $("#send1").prop("disabled", true);
     slapform.submit({
         form: "vog0f58Vj"
@@ -50,6 +49,5 @@ $("#send1").click(function () {
     document.getElementById("2").value = "";
     document.getElementById("3").value = "";
     document.getElementById("4").value = "";
-    document.querySelector("#happy").checked = false;
     return false;
 });
