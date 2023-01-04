@@ -10,6 +10,10 @@
 		margin: 0;
 		width: 100%;
 	}
+
+	li{
+		list-style: none;
+	}
 	
 	.header{
 		background: url('project_files/video.png');
@@ -334,13 +338,42 @@
 		table-layout: fixed;
 		background-color: white;
 	}
-	#sup_from_drupal-coder_el_header{
+	#sup_from_drupal-coder_el_header1{
 		font-weight:bold;
 		font-size: 15px;
 	}
-	#sup_img{
+	#sup_from_drupal-coder_el_header2{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header3{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header4{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header5{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header6{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header7{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header8{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	.sup_img{
 		float: right;
 	}
+
 
 	/* 4. Блок - Экспертиза в Drupal, опыт 14 лет */
 
@@ -437,7 +470,7 @@
 		width: 80%;
 		padding-bottom: 7vw;
 	}
-	#blok_tarif_element_head{
+	.blok_tarif_element_head{
 		border-bottom: 2px solid #aaa;
 		padding: 0vw 0vw 2vw 0vw;
 		vertical-align: middle;
@@ -948,6 +981,12 @@
 	  width: 80%;
 	  margin-bottom: 5%;
     }
+	.faq1 li{
+		list-style:decimal;
+	}
+	#li_none{
+		list-style: none;
+	}
 	.hhh{
 	 display:flex;
 	 justify-content:center;
@@ -965,8 +1004,9 @@
 	}
 	.part1{
 		color:red;
-	font-size:20px;
+	    font-size:20px;
 		font-weight:1000;
+		padding-left: 2%;
 	}
 	.part2{
 		margin-left:5%;
@@ -1120,6 +1160,10 @@ body{
 	font-size:smaller;
 	margin: 0;
 	width: 100%;
+}
+
+li{
+	list-style: none;
 }
 
 .header{
@@ -1448,11 +1492,39 @@ ul.menu li {
 		table-layout: fixed;
 		background-color: white;
 	}
-	#sup_from_drupal-coder_el_header{
+	#sup_from_drupal-coder_el_header1{
 		font-weight:bold;
 		font-size: 15px;
 	}
-	#sup_img{
+	#sup_from_drupal-coder_el_header2{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header3{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header4{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header5{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header6{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header7{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_from_drupal-coder_el_header8{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	.sup_img{
 		float: right;
 	}
 
@@ -1566,7 +1638,7 @@ ul.menu li {
 		padding-bottom: 7vw;
 		margin-top: 5%;
 	}
-	#blok_tarif_element_head{
+	.blok_tarif_element_head{
 		border-bottom: 2px solid #aaa;
 		padding: 0vw 0vw 2vw 0vw;
 		vertical-align: middle;
@@ -2063,6 +2135,12 @@ ul.menu li {
 		width: 90%;
 		margin-bottom: 5%;
 	}
+	.faq1 li{
+		list-style:decimal;
+	}
+	#li_none{
+		list-style: none;
+	}
 	.hhh{
 		display:flex;
 		justify-content:center;
@@ -2084,6 +2162,7 @@ ul.menu li {
 		color:red;
 		font-size:14px;
 		font-weight:1000;
+		padding-left: 1%;
 	}
 	.part2{
 		margin-left:14%;
