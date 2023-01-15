@@ -113,7 +113,7 @@ const newForm = {
 
 
 $("#send11").click(function () {
-    fetch('https://api.slapform.com/xWtb4yTpv&slap_redirect=https://siyankomaks.github.io/project/project.html', {
+    fetch('https://api.slapform.com/xWtb4yTpv?slap_redirect=https://siyankomaks.github.io/project/project.html', {
         body: JSON.stringify(newForm)
         .then(function (response) { // This function runs only on success
             alert('Форма отправлена', response);
