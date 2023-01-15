@@ -2,6 +2,58 @@
 
 /* 1. Шапка сайта + навигационное меню */
 @media(min-width:960px){
+
+	#fff{
+		display:flex;
+		position:fixed;
+		right:10px;
+	    top:30px;
+	}
+	.form11{
+		display: none;
+		max-width:250px;
+		background:white;
+        border-radius:18px;
+		border: 4px outset lime;
+		padding: 7px;
+		background-color: #000;
+		color: white;
+	}
+	#open-form{
+		background: cyan;
+	    width:100px;
+		height:100px;
+		border-radius:51px;
+		border:2px solid blue;
+		font-weight:1000;
+		color:blue;
+		opacity:0.3;
+	}
+	#open-form:hover{
+		opacity:1;
+		transition:0.2s;
+	}
+	#send11 {
+		border:2px inset #ff5722;	
+		border-radius:44px;
+		background:#FF5722;
+		width:80%;
+		height:50px;
+		margin-bottom: 5%;
+		color: cyan;
+		font-weight:1000;
+		margin-left: 9%;
+		}
+	#send11:hover {
+		transition: .2s;
+		background: none;
+	}
+	.form11 input[type="checkbox"] {
+		display: initial;
+	}
+
+
+
 	
 	body{
 		font-family: 'Montserrat';
@@ -114,6 +166,8 @@
 		text-align: center;
 		padding-left: 1%;
 		padding-right: 3%;
+		margin-left: 10%;
+		margin-right: 5%;
 	}
 	.item_1{
 		vertical-align: middle;
@@ -2342,5 +2396,54 @@ ul.menu li {
 		display:flex;
 		margin-bottom:2%;
 		-webkit-user-drag: none;
+		}
+
+		#fff{
+			display:flex;
+			position:fixed;
+			right:10%;
+		    top:30px;
+		}
+		.form11{
+			display: none;
+			max-width:250px;
+			background:white;
+			border-radius:18px;
+			border: 5px outset lime;
+			padding: 7px;
+			background-color: #000;
+			color: white;
+		}
+		#open-form{
+			background: cyan;
+		    width:100px;
+			height:100px;
+			border-radius:51px;
+			border:2px solid blue;
+			font-weight:1000;
+			color:blue;
+			opacity:0.3;
+		}
+		#open-form:hover{
+			opacity:1;
+			transition:0.2s;
+		}
+		#send11 {
+			border:2px inset #ff5722;	
+			border-radius:44px;
+			background:#FF5722;
+			width:80%;
+			height:50px;
+			margin-bottom: 5%;
+			color: cyan;
+			font-weight:1000;
+			margin-left: 9%;
+			}
+		#send11:hover {
+			transition: .2s;
+			background: none;
+		}
+		.form11 input[type="checkbox"] {
+			display: initial;
 		}
 }
