@@ -51,6 +51,82 @@ $("#send1").click(function () {
     document.getElementById("4").value = "";
     return false;
 });
+
 $("#nav").on("click", function() {
     $(".second").toggle();
+});
+
+
+// Блок - фиксированная форма
+
+function openForm() {
+    history.pushState({page: 2}, "Form", "?form");
+    return false;
+}
+
+function openHome() {
+    history.replaceState({page: 1}, "Home", "?home");
+    return false;
+}
+
+$("#open-form").on("click", function() {
+		if (document.querySelector(".form11").style.display == "none")
+		openForm();
+	else
+		openHome();
+	
+    $(".form11").toggle(400);
+	   document.querySelector("#na").value = localStorage.getItem("name");
+            document.querySelector("#em").value = localStorage.getItem("emai");
+            document.querySelector("#me").value = localStorage.getItem("mess");        
+	    document.querySelector("#ph").value = localStorage.getItem("tele");
+});
+
+$("#na, #em, #me, #ph, #check").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
+
+// Работа с выпадающей формой с помощью fetch
+
+const newForm = {
+    name: localStorage.getItem("f-name"),
+    name: localStorage.getItem("Phone"),
+    email: localStorage.getItem("Email"),
+    message: localStorage.getItem("comment"),
+    checkbox: localStorage.getItem("check"),
+}
+
+
+$("#send11").click(function () {
+    fetch('https://api.slapform.com/xWtb4yTpv&slap_redirect=https://siyankomaks.github.io/project/project.html', {
+        body: JSON.stringify(newForm)
+        .then(function (response) { // This function runs only on success
+            alert('Форма отправлена', response);
+        })
+        .catch(function (response) { // This function runs only on error
+            alert('Ошибка отправки!', response);
+        })
+    });
+    document.getElementById("na").value = "";
+    document.getElementById("ph").value = "";
+    document.getElementById("em").value = "";
+    document.getElementById("me").value = "";
+    document.querySelector("#check").checked = false;
+    
+    return false;
 });
