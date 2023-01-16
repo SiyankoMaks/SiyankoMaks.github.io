@@ -116,7 +116,7 @@ $("#send11").click(function (e) {
     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-        body: newForm
+        body: JSON.stringify(newForm)
     })
     .then(function (response) { // This function runs only on success
         alert('Форма отправлена', response);
