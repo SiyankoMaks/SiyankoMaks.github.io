@@ -113,19 +113,21 @@ const newForm = {
 
 
 $("#send11").click(function () {
-    fetch('https://api.slapform.com/xWtb4yTpv?slap_redirect=https://siyankomaks.github.io/project/project.html', {
+    fetch('https://formcarry.com/s/E0yn0irn5E', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
         body: JSON.stringify(newForm)
-        .then(function (response) { // This function runs only on success
-            alert('Форма отправлена', response);
-        })
-        .catch(function (response) { // This function runs only on error
-            alert('Ошибка отправки!', response);
-        })
-    });
-    document.getElementById("na").value = "";
-    document.getElementById("ph").value = "";
-    document.getElementById("em").value = "";
-    document.getElementById("me").value = "";
+    })
+    .then(function (response) { // This function runs only on success
+        alert('Форма отправлена', response);
+    })
+    .catch(function (Error) { // This function runs only on error
+        alert('Ошибка отправки!', Error);
+    })
+    document.getElementById("#na").value = "";
+    document.getElementById("#ph").value = "";
+    document.getElementById("#em").value = "";
+    document.getElementById("#me").value = "";
     document.querySelector("#check").checked = false;
     
     return false;
