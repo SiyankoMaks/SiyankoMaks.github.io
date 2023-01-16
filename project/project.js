@@ -103,14 +103,11 @@ $("#na, #em, #me, #ph, #check").change(function () {
 
 // Работа с выпадающей формой с помощью fetch
 
-let form = document.forms.myForm; // <form name="my"> element
-
-  // получаем элемент
-let elem = form.elements.Phone; 
+let phones = localStorage.getItem("Phone");
 
 let newForm = {
     name: 'Alex',
-    phone: elem.value,
+    phone: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
     message: localStorage.getItem("comment"),
     checkbox: localStorage.getItem("check")
@@ -121,11 +118,11 @@ $("#send11").click(function (e) {
     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-        body: JSON.stringify(newForm)
+        body: JSON.stringify(phones)
     })
     .then(function (response) { // This function runs only on success
         alert('Форма отправлена', response);
-	    alert(JSON.stringify(newForm));
+	    alert(JSON.stringify(phones));
     })
     .catch(function (Error) { // This function runs only on error
         alert('Ошибка отправки!', Error);
