@@ -114,7 +114,7 @@ let newForm = {
 
 $("#send11").click(function (e) {
     e.preventDefault();
-    fetch('https://formcarry.com/s/E0yn0irn5E', {
+    fetch('https://formcarry.com/s/E0yn0irn5E/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
         body: JSON.stringify(newForm)
