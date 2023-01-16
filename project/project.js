@@ -120,6 +120,7 @@ $("#send11").click(function (e) {
     })
     .then(function (response) { // This function runs only on success
         alert('Форма отправлена', response);
+	    alert(JSON.stringify(newForm));
     })
     .catch(function (Error) { // This function runs only on error
         alert('Ошибка отправки!', Error);
