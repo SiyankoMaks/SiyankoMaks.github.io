@@ -107,7 +107,7 @@ let newForm = {
     name: localStorage.getItem("f-name"),
     phone: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
-    message: localStorage.getItem("check"),
+    message: localStorage.getItem("me"),
     checkbox: localStorage.getItem("check"),
 };
 
