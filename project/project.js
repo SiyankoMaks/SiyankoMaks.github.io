@@ -105,9 +105,9 @@ $("#na, #em, #me, #ph, #check").change(function () {
 
 let newForm = {
     name: localStorage.getItem("f-name"),
-    name: localStorage.getItem("Phone"),
+    phone: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
-    message: localStorage.getItem("comment"),
+    message: localStorage.getItem("check"),
     checkbox: localStorage.getItem("check"),
 };
 
@@ -116,7 +116,7 @@ $("#send11").click(function (e) {
     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-        body: encodeFormData(newForm)
+        body: JSON.stringify(newForm)
     })
     .then(function (response) { // This function runs only on success
         alert('Форма отправлена', response);
