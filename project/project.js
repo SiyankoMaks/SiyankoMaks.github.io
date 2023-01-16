@@ -132,5 +132,4 @@ $("#send11").click(function (e) {
         alert('Ошибка отправки!', Error);
     })
     document.querySelector("#check").checked = false;
-    return false;
 });
