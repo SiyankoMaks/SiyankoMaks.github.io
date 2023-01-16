@@ -108,8 +108,8 @@ let newForm = {
     phone: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
     message: localStorage.getItem("me"),
-    checkbox: localStorage.getItem("check"),
-};
+    checkbox: localStorage.getItem("check")
+}
 
 $("#send11").click(function (e) {
     e.preventDefault();
