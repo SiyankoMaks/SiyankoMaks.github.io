@@ -111,13 +111,13 @@ const newForm = {
     checkbox: localStorage.getItem("check"),
 }
 
-encodenewForm(newForm);
 
-$("#send11").click(function () {
+$("#send11").click(function (e) {
+    e.preventDefault();
     fetch('https://formcarry.com/s/E0yn0irn5E', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-        body: encodenewForm(newForm)
+        body: JSON.stringify(newForm)
     })
     .then(function (response) { // This function runs only on success
         alert('Форма отправлена', response);
@@ -125,10 +125,6 @@ $("#send11").click(function () {
     .catch(function (Error) { // This function runs only on error
         alert('Ошибка отправки!', Error);
     })
-    document.getElementById("#na").value = "";
-    document.getElementById("#ph").value = "";
-    document.getElementById("#em").value = "";
-    document.getElementById("#me").value = "";
     document.querySelector("#check").checked = false;
     
     return false;
