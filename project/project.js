@@ -103,11 +103,15 @@ $("#na, #em, #me, #ph, #check").change(function () {
 
 // Работа с выпадающей формой с помощью fetch
 
+var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
 let newForm = {
-    name: localStorage.getItem("f-name"),
-    phone: localStorage.getItem("Phone"),
-    email: localStorage.getItem("Email"),
-    message: localStorage.getItem("me"),
+    name: localStorage.getItem("f-name", nam),
+    phone: localStorage.getItem("Phone", tel),
+    email: localStorage.getItem("Email", email),
+    message: localStorage.getItem("comment", mes),
     checkbox: localStorage.getItem("check")
 }
 
