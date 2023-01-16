@@ -110,14 +110,20 @@ let newForm = {
     message: localStorage.getItem("comment"),
     checkbox: localStorage.getItem("check"),
 };
+const encodeFormData = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&');
+}
 
+encodeFormData(newForm);
 
 $("#send11").click(function (e) {
     e.preventDefault();
     fetch('https://formcarry.com/s/E0yn0irn5E/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-        body: JSON.stringify(newForm)
+        body: encodeFormData(newForm)
     })
     .then(function (response) { // This function runs only on success
         alert('Форма отправлена', response);
