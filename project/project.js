@@ -104,11 +104,11 @@ $("#na, #em, #me, #ph, #check").change(function () {
 // Работа с выпадающей формой с помощью fetch
 
 let newForm = {
+    checkbox: localStorage.getItem("check"),
     name: localStorage.getItem("f-name"),
     phone: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
-    message: localStorage.getItem("comment"),
-    checkbox: localStorage.getItem("check")
+    message: localStorage.getItem("comment")
 }
 
 $("#send11").click(function (e) {
