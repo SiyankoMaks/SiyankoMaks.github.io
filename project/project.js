@@ -103,20 +103,20 @@ $("#na, #em, #me, #ph, #check").change(function () {
 
 // Работа с выпадающей формой с помощью fetch
 
-const newForm = {
+let newForm = {
     name: localStorage.getItem("f-name"),
     name: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
     message: localStorage.getItem("comment"),
     checkbox: localStorage.getItem("check"),
-}
+};
 
 
 $("#send11").click(function (e) {
     e.preventDefault();
     fetch('https://formcarry.com/s/E0yn0irn5E', {
         method: 'POST',
-        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
         body: JSON.stringify(newForm)
     })
     .then(function (response) { // This function runs only on success
@@ -126,6 +126,4 @@ $("#send11").click(function (e) {
         alert('Ошибка отправки!', Error);
     })
     document.querySelector("#check").checked = false;
-    
-    return false;
 });
