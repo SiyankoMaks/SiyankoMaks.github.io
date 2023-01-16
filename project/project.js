@@ -103,9 +103,14 @@ $("#na, #em, #me, #ph, #check").change(function () {
 
 // Работа с выпадающей формой с помощью fetch
 
+let form = document.forms.myForm; // <form name="my"> element
+
+  // получаем элемент
+let elem = form.elements.Phone; 
+
 let newForm = {
     name: 'Alex',
-    phone: localStorage.getItem("Phone"),
+    phone: elem.value,
     email: localStorage.getItem("Email"),
     message: localStorage.getItem("comment"),
     checkbox: localStorage.getItem("check")
