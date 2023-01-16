@@ -111,12 +111,13 @@ const newForm = {
     checkbox: localStorage.getItem("check"),
 }
 
+encodenewForm(newForm);
 
 $("#send11").click(function () {
     fetch('https://formcarry.com/s/E0yn0irn5E', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-        body: JSON.stringify(newForm)
+        body: encodenewForm(newForm)
     })
     .then(function (response) { // This function runs only on success
         alert('Форма отправлена', response);
