@@ -108,6 +108,7 @@ $("#na, #em, #me, #ph, #check").change(function () {
 var click_form = document.getElementById('send11');
 var num_err = 0;
 click_form.onclick = function() {
+    num_err = 0;
     let str_err='';
     var nam = document.getElementById('na');
     if(!nam.value){str_err = 'Заполните поле - Имя\n'; num_err++;}
