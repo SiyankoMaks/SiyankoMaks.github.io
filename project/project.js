@@ -108,6 +108,7 @@ $("#na, #em, #me, #ph, #check").change(function () {
 var click_form = document.getElementById('send11');
 var num_err = 0;
 click_form.onclick = function() {
+    $('#send11').attr('disabled', true);
     num_err = 0;
     let str_err='';
     var nam = document.getElementById('na');
@@ -123,6 +124,8 @@ click_form.onclick = function() {
     if(num_err!=0){alert('!!!Исправьте ошибки!!!\n' + str_err); return false;}    
 }
 
+//
+
 let newForm = {
     name: localStorage.getItem("name"),
     phone: localStorage.getItem("tele"),
@@ -133,19 +136,21 @@ let newForm = {
 
 $("#send11").click(function (e) {
     e.preventDefault();
-    if(num_err == 0){
-        return fetch('https://formcarry.com/s/E0yn0irn5E/', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-            body: JSON.stringify(newForm),
-        })
-        .then(function (response) { // This function runs only on success
-            alert('Форма отправлена', response);
-            alert(JSON.stringify(newForm));
-        })
-        .catch(function (Error) { // This function runs only on error
-            alert('Ошибка отправки!', Error);
-        })
-    }
+    // if(num_err == 0){
+    //     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
+    //         method: 'POST',
+    //         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
+    //         body: JSON.stringify(newForm),
+    //     })
+    //     .then(function (response) { // This function runs only on success
+    //         alert('Форма отправлена', response);
+    //         alert(JSON.stringify(newForm));
+    //     })
+    //     .catch(function (Error) { // This function runs only on error
+    //         alert('Ошибка отправки!', Error);
+    //     })
+    // }
+    alert(JSON.stringify(newForm));
+    $('#send11').attr('disabled', false);
     document.querySelector("#check").checked = false;
 });
