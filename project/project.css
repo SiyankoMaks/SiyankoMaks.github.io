@@ -3,6 +3,9 @@
 /* 1. Шапка сайта + навигационное меню */
 @media(min-width:960px){
 
+	.hamburger{
+		display: none;
+	}
 	#fff{
 		display:flex;
 		position:fixed;
@@ -1300,7 +1303,6 @@ li{
 
 #nav .second > li {
 	display: block;
-	background-color: orangered;
 	padding-top: 1%;
 }
 .menu li a:hover{
@@ -1432,6 +1434,9 @@ ul.menu li {
     height: -webkit-fill-available;
 	height: 50vw;
 }
+
+
+
 
 
 /* 2. Блок: 13 лет  */
@@ -2477,4 +2482,67 @@ ul.menu li {
 			  clip-path: inset(0 -1ch 0 0)
 			}
 		  }
+		  .hamburger {
+			float: right;
+			vertical-align: middle;
+			cursor: pointer;
+			width: 40px;
+			height: 40px;
+			background: black;
+			padding: 5px;
+			border:none;
+		  }
+		  .btn__hamb {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 4px;
+			  cursor: pointer; 
+		  }
+			.btn__hamb div {
+			  width: 100%;
+			  height: 100%; 
+			  background: #0E7318;
+		  }
+			.btn__hamb:before, .btn__hamb:after {
+			  content: "";
+			  width: 100%;
+			  height: 100%;
+			  position: absolute;
+			  left: 0;
+			  background: #0E7318; 
+		  }
+			.btn__hamb:before {
+			  top: -8px; 
+		  }
+			.btn__hamb:after {
+			  top: 8px; 
+		  }
+		  .btn__hamb--blue div{
+			background: orangered;
+		  }
+		  .btn__hamb--blue:before, .btn__hamb--blue:after {
+			background: orangered;
+		  }
+		  .container{
+			background-color: black;
+			position: fixed;
+			margin-top: 100%;
+			z-index: 999;
+		  }
+		  ul.menu {
+			display: none;
+		  }
+		  .menu li{
+			float: left;
+			width: 100%;
+		  }
+		  .second{
+			position: relative;
+			background-color: #000;
+		  }
+		  ul.second{
+			margin-left: -15%;
+		  }
+
 }
