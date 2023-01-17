@@ -51,9 +51,12 @@ $("#send1").click(function () {
 });
 
 $("#nav").on("click", function() {
-    $(".second").toggle();
+    $(".second").slideToggle(400);
 });
 
+$("#mobile-menu-btn").on("click", function() {
+    $(".menu").toggle(400);
+});
 // Блок - фиксированная форма
 
 function openForm() {
@@ -226,3 +229,5 @@ $("#send11").click(function (e) {
     $('#send11').attr('disabled', false);
     document.querySelector("#check").checked = false;
 });
+
+
