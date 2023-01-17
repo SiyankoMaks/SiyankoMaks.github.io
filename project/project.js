@@ -124,7 +124,7 @@ click_form.onclick = function() {
 }
 
 let newForm = {
-    name: document.getElementById('na'),
+    name: document.getElementById('na').value,
     phone: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
     message: localStorage.getItem("comment"),
