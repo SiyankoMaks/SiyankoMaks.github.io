@@ -21,8 +21,6 @@ $(function(){
 });
 
 
-
-
 /* 8. Блок - Отзывы */
 $(".multiple-items").slick({
     dots: true,
@@ -56,7 +54,6 @@ $("#nav").on("click", function() {
     $(".second").toggle();
 });
 
-
 // Блок - фиксированная форма
 
 function openForm() {
@@ -82,7 +79,7 @@ $("#open-form").on("click", function() {
 	    document.querySelector("#ph").value = localStorage.getItem("tele");
 });
 
-$("#na, #em, #me, #ph, #check").change(function () {
+$("#na").change(function () {
 	    
     var nam = $("#na").val();
     var email = $("#em").val();
@@ -100,7 +97,78 @@ $("#na, #em, #me, #ph, #check").change(function () {
     } 
     return false;
 });
-
+$("#em").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
+$("#me").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
+$("#ph").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
+$("#check").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
 // Работа с выпадающей формой с помощью fetch
 
 // Отработка ошибок
@@ -109,6 +177,7 @@ var click_form = document.getElementById('send11');
 var num_err = 0;
 click_form.onclick = function() {
     $('#send11').attr('disabled', true);
+    $('#send11').text('Идет отправка формы...')
     num_err = 0;
     let str_err='';
     var nam = document.getElementById('na');
@@ -126,16 +195,17 @@ click_form.onclick = function() {
 
 //
 
-let newForm = {
+
+
+$("#send11").click(function (e) {
+    e.preventDefault();
+	let newForm = {
     name: localStorage.getItem("name"),
     phone: localStorage.getItem("tele"),
     email: localStorage.getItem("emai"),
     message: localStorage.getItem("mess"),
     checkbox: localStorage.getItem("check")
 }
-
-$("#send11").click(function (e) {
-    e.preventDefault();
     // if(num_err == 0){
     //     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
     //         method: 'POST',
@@ -150,7 +220,9 @@ $("#send11").click(function (e) {
     //         alert('Ошибка отправки!', Error);
     //     })
     // }
+    
     alert(JSON.stringify(newForm));
+    $('#send11').text('Отправить')
     $('#send11').attr('disabled', false);
     document.querySelector("#check").checked = false;
 });
