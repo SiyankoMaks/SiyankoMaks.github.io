@@ -48,10 +48,25 @@
 		transition: .2s;
 		background: none;
 	}
+	#send11[disabled]{
+		cursor:default;
+		background:none;
+	}
+
 	.form11 input[type="checkbox"] {
 		display: initial;
 	}
-
+	#send11[disabled] {
+		clip-path: inset(0 2.5ch 0 0);
+		animation: l 3s steps(10) infinite;
+		border: 0;
+	}
+	  
+	  @keyframes l {
+		to {
+		  clip-path: inset(0 -1ch 0 0)
+		}
+	  }
 
 
 	
@@ -345,6 +360,7 @@
 	.sup_from_drupal-coder{
 		margin-bottom: -10%;
 		position: relative;
+		float: left;
 	}
 	.sup_from_drupal-coder_header{
 		
@@ -2373,7 +2389,7 @@ ul.menu li {
 		}
 		.content1 a{
 		text-align: center;
-		font-size:50px;
+		font-size:30px;
 		font-weight: bold;
 		color: black;
 		}
@@ -2443,7 +2459,22 @@ ul.menu li {
 			transition: .2s;
 			background: none;
 		}
+		#send11[disabled]{
+			cursor:default;
+			background:none;
+		}
 		.form11 input[type="checkbox"] {
 			display: initial;
 		}
+		#send11[disabled] {
+			clip-path: inset(0 2.5ch 0 0);
+			animation: l 3s steps(10) infinite;
+			border: 0;
+		}
+		  
+		  @keyframes l {
+			to {
+			  clip-path: inset(0 -1ch 0 0)
+			}
+		  }
 }
