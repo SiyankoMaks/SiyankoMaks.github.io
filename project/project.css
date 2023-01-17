@@ -1244,6 +1244,7 @@ li{
 	background-size: cover;
 	margin-bottom: 30px;
 	width: 100%;
+	margin-top: -10%;
 }
 .bgvideo {
 	position: absolute;
@@ -1346,6 +1347,7 @@ ul.menu li {
 	text-align: center;
 	margin-left: 1%;
 	margin-right: 5%;
+	padding-top: 5%;
 }
 .shapka{
 	text-align: center;
@@ -2423,7 +2425,7 @@ ul.menu li {
 			display:flex;
 			position:fixed;
 			right:10%;
-		    top:30px;
+		    top:80%;
 		}
 		.form11{
 			display: none;
@@ -2527,7 +2529,7 @@ ul.menu li {
 		  .container{
 			background-color: black;
 			position: fixed;
-			margin-top: 100%;
+			margin: 0;
 			z-index: 999;
 		  }
 		  ul.menu {
