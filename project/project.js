@@ -124,10 +124,10 @@ click_form.onclick = function() {
 }
 
 let newForm = {
-    name: document.getElementById('na').value,
+    name: localStorage.getItem("name"),
     phone: localStorage.getItem("tele"),
-    email: localStorage.getItem("Email"),
-    message: localStorage.getItem("comment"),
+    email: localStorage.getItem("emai"),
+    message: localStorage.getItem("mess"),
     checkbox: localStorage.getItem("check")
 }
 
