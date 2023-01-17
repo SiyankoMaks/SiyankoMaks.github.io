@@ -103,10 +103,27 @@ $("#na, #em, #me, #ph, #check").change(function () {
 
 // Работа с выпадающей формой с помощью fetch
 
-let phones = localStorage.getItem("Phone");
+// Отработка ошибок
+
+var click_form = document.getElementById('send11');
+var num_err = 0;
+click_form.onclick = function() {
+    let str_err='';
+    var nam = document.getElementById('na');
+    if(!nam.value){str_err = 'Заполните поле - Имя\n'; num_err++;}
+    var phon = document.getElementById('ph');
+    if(!phon.value){str_err += 'Заполните поле - Номер\n'; num_err++;}
+    var mail = document.getElementById('em');
+    if(!mail.value){str_err += 'Заполните поле - Email\n'; num_err++;} 
+    var comm = document.getElementById('me');
+    if(!comm.value){str_err += 'Заполните поле - Сообщение\n'; num_err++;}
+    var box = document.getElementById('check');
+    if(!box.checked){str_err += 'Заполните поле - Согласие на обработку данных\n'; num_err++;}
+    if(num_err!=0){alert('!!!Исправьте ошибки!!!\n' + str_err); return false;}    
+}
 
 let newForm = {
-    name: 'Alex',
+    name: localStorage.getItem("f-name"),
     phone: localStorage.getItem("Phone"),
     email: localStorage.getItem("Email"),
     message: localStorage.getItem("comment"),
@@ -115,17 +132,19 @@ let newForm = {
 
 $("#send11").click(function (e) {
     e.preventDefault();
-    return fetch('https://formcarry.com/s/E0yn0irn5E/', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-        body: JSON.stringify(phones)
-    })
-    .then(function (response) { // This function runs only on success
-        alert('Форма отправлена', response);
-	    alert(JSON.stringify(phones));
-    })
-    .catch(function (Error) { // This function runs only on error
-        alert('Ошибка отправки!', Error);
-    })
+    if(num_err == 0){
+        return fetch('https://formcarry.com/s/E0yn0irn5E/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
+            body: JSON.stringify(newForm),
+        })
+        .then(function (response) { // This function runs only on success
+            alert('Форма отправлена', response);
+            alert(JSON.stringify(newForm));
+        })
+        .catch(function (Error) { // This function runs only on error
+            alert('Ошибка отправки!', Error);
+        })
+    }
     document.querySelector("#check").checked = false;
 });
