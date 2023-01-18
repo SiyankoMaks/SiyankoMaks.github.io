@@ -54,8 +54,9 @@ $("#nav").on("click", function() {
     $(".second").slideToggle(400);
 });
 
-$("#mobile-menu-btn").on("click", function() {
-    $(".menu").toggle(400);
+$("#mobile-menu-btn").on("click", function(e) {
+    e.preventDefault;
+    $(".menu").slideToggle(400);
 });
 // Блок - фиксированная форма
 
@@ -179,8 +180,8 @@ $("#check").change(function () {
 var click_form = document.getElementById('send11');
 var num_err = 0;
 click_form.onclick = function() {
-    $('#send11').attr('disabled', true);
     $('#send11').text('Идет отправка формы...')
+    $('#send11').attr('disabled', true);
     num_err = 0;
     let str_err='';
     var nam = document.getElementById('na');
@@ -209,24 +210,23 @@ $("#send11").click(function (e) {
     message: localStorage.getItem("mess"),
     checkbox: localStorage.getItem("check")
 }
-    // if(num_err == 0){
-    //     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
-    //         method: 'POST',
-    //         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-    //         body: JSON.stringify(newForm),
-    //     })
-    //     .then(function (response) { // This function runs only on success
-    //         alert('Форма отправлена', response);
-    //         alert(JSON.stringify(newForm));
-    //     })
-    //     .catch(function (Error) { // This function runs only on error
-    //         alert('Ошибка отправки!', Error);
-    //     })
-    // }
-    
-    alert(JSON.stringify(newForm));
-    $('#send11').text('Отправить')
-    $('#send11').attr('disabled', false);
+    if(num_err == 0){
+        return fetch('https://formcarry.com/s/5xsi9IFHt7/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
+            body: JSON.stringify(newForm),
+        })
+        .then(function (response) { // Функция срабатывает при успешной отправке
+            alert('Форма отправлена', response);
+            $('#send11').text('Отправить');
+            $('#send11').attr('disabled', false);
+        })
+        .catch(function (Error) { // Функция срабатывает при ошибке
+            alert('Ошибка отправки!', Error);
+            $('#send11').text('Отправить');
+            $('#send11').attr('disabled', false);
+        })
+    }
     document.querySelector("#check").checked = false;
 });
 
