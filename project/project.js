@@ -180,8 +180,6 @@ $("#check").change(function () {
 var click_form = document.getElementById('send11');
 var num_err = 0;
 click_form.onclick = function() {
-    
-    $('#send11').attr('disabled', true);
     num_err = 0;
     let str_err='';
     var nam = document.getElementById('na');
@@ -195,7 +193,7 @@ click_form.onclick = function() {
     var box = document.getElementById('check');
     if(!box.checked){str_err += 'Заполните поле - Согласие на обработку данных\n'; num_err++;}
     if(num_err!=0){alert('!!!Исправьте ошибки!!!\n' + str_err); return false;}
-	else $('#send11').text('Идет отправка формы...');
+	else {$('#send11').text('Идет отправка формы...'); $('#send11').attr('disabled', true);}
 }
 
 //
